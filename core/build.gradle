@@ -1,0 +1,15 @@
+apply plugin: 'java'
+apply plugin: 'com.jfrog.bintray'
+
+ext {
+    gdxVersion = '1.9.2'
+}
+
+
+dependencies {
+    compile "com.badlogicgames.gdx:gdx:$gdxVersion"
+    compile 'org.json:json:20160212'
+
+}
+
+apply from: project.rootDir.path + '/scripts/bintray.gradle'

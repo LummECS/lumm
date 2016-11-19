@@ -1,0 +1,36 @@
+
+
+group = PROJECT_GROUP
+version = PROJECT_VERSION
+
+publishing {
+    publications {
+        BintrayPublication(MavenPublication) {
+            from components.java
+            groupId PROJECT_GROUP
+            artifactId PROJECT_NAME
+            version PROJECT_VERSION
+        }
+    }
+}
+
+bintray {
+    user = bintray_username
+    key = bintray_api_key
+    publications = ['BintrayPublication']
+    publish = true //If version should be auto published after an upload
+    pkg {
+        repo = PROJECT_REPO
+        name = PROJECT_NAME
+        userOrg = PROJECT_ORGANIZATION
+        licenses = ['Apache-2.0']
+        vcsUrl = PROJECT_VCS_URL
+        publicDownloadNumbers = true
+        version {
+            name = PROJECT_VERSION
+            desc = PROJECT_VERSION_DESCRIPTION
+            released  = new Date()
+            vcsTag = PROJECT_VERSION
+        }
+    }
+}
