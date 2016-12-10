@@ -2,7 +2,12 @@
 
 buildscript {
     repositories {
-        jcenter()
+        //local maven repository (advanced use)
+        mavenLocal()
+        //maven central repository, needed for the android plugin
+        mavenCentral()
+        //snapshot repository (in case this script depends on snapshot/prerelease artifacts)
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
     }
     dependencies {
         // NOTE: Do not place your application dependencies here; they belong
@@ -16,7 +21,7 @@ plugins {
 allprojects {
 
     repositories {
-        jcenter()
+        mavenLocal()
         mavenCentral()
         maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
         maven { url "https://oss.sonatype.org/content/repositories/releases/" }
@@ -25,6 +30,8 @@ allprojects {
     apply plugin: 'maven'
     apply plugin: 'maven-publish'
     apply plugin: 'java'
+    apply plugin: "idea"
+
 }
 
 // run gradle wrapper to update gradle wrapper version

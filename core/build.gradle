@@ -2,12 +2,12 @@ apply plugin: 'java'
 apply plugin: 'com.jfrog.bintray'
 
 ext {
-    gdxVersion = '1.9.2'
+    gdxVersion = '1.9.5'
 }
 
 
 dependencies {
-    compile "com.badlogicgames.gdx:gdx:$gdxVersion"
+    compile "com.badlogicgames.gdx:gdx:1.9.5"
     compile 'org.json:json:20160212'
 
 }
