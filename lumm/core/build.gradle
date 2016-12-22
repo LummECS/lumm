@@ -1,0 +1,8 @@
+
+dependencies {
+    compile "com.badlogicgames.gdx:gdx:$gdxVersion"
+    compile 'org.json:json:20160212'
+
+}
+
+

@@ -2,14 +2,12 @@
 
 buildscript {
     repositories {
-        //local maven repository (advanced use)
-        mavenLocal()
-        //maven central repository, needed for the android plugin
-        mavenCentral()
-        //snapshot repository (in case this script depends on snapshot/prerelease artifacts)
-        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+        jcenter()
     }
     dependencies {
+        classpath 'com.android.tools.build:gradle:2.2.3'
+        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7.3'
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
@@ -21,18 +19,27 @@ plugins {
 allprojects {
 
     repositories {
-        mavenLocal()
-        mavenCentral()
-        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
-        maven { url "https://oss.sonatype.org/content/repositories/releases/" }
+        jcenter()
     }
 
-    apply plugin: 'maven'
-    apply plugin: 'maven-publish'
-    apply plugin: 'java'
-    apply plugin: "idea"
+}
+subprojects {
+    apply from:"$rootDir\\gradle\\vars.gradle"
+    apply from:"$rootDir\\gradle\\utils.gradle"
+    apply from:"$rootDir\\gradle\\bintray.gradle"
+
+
+//    print hasBintrayCredentials()
+//    print hasLocalBintrayCredentials()
+//    print hasSystemBintrayCredentials()
+//    if((project.hasBintrayCredentials())) {
+////                project.setUpBintrayCredentials()
+//    }
+
+
 
 }
+
 
 // run gradle wrapper to update gradle wrapper version
 // http://stackoverflow.com/questions/25769536/how-when-to-generate-gradle-wrapper-files
@@ -40,12 +47,7 @@ task wrapper(type: Wrapper) {
     gradleVersion = '2.10' //version required
 }
 
-task bintrayUploadCore(dependsOn:[':com.sidereal.lumm/core:bintrayUpload']){}
+task bintrayUploadCore(dependsOn:[':lumm/core:bintrayUpload']){}
 
 // task gradle bintrayUpload
 // https://github.com/bintray/gradle-bintray-plugin#readme
-
-
-task clean(type: Delete) {
-    delete rootProject.buildDir
-}

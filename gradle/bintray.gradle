@@ -1,0 +1,92 @@
+apply from:"$rootDir\\gradle\\utils.gradle"
+
+def userNameProperty = 'lumm_bintray_username'
+def apiKeyProperty = 'lumm_bintray_api_key'
+
+ext {
+    apply plugin: 'com.github.dcendents.android-maven'
+    apply plugin: 'com.jfrog.bintray'
+    apply plugin: 'maven'
+}
+
+ext.hasBintrayCredentials = {
+    return project.hasProperty (userNameProperty) && project.hasProperty (apiKeyProperty)
+}
+ext.setUpBintrayConnection = {
+
+    if(!project.hasBintrayCredentials()){
+        throw new GradleException('You need \'lumm_bintray_username\' and \'lumm_bintray_api_key\' properties to set up bintray');
+    }
+
+
+    project.bintray {
+        user = lumm_bintray_username
+        key = lumm_bintray_api_key
+
+        configurations = ['archives']
+
+        publish = true //If version should be auto published after an upload
+        pkg {
+            repo = PROJECT_REPO
+            name = PROJECT_NAME
+            userOrg = PROJECT_ORGANIZATION
+            licenses = ['Apache-2.0']
+            websiteUrl = project.getSiteUrl()
+            issueTrackerUrl = project.getIssuesUrl()
+            vcsUrl = project.getGitUrl()
+            publicDownloadNumbers = true
+            labels = ['aar', 'android']
+            version {
+                name = PROJECT_VERSION
+                desc = PROJECT_VERSION_DESCRIPTION
+                released  = new Date()
+                vcsTag = PROJECT_VERSION
+            }
+        }
+    }
+
+    println "passed bintray closure"
+
+    project.install {
+        repositories.mavenInstaller {
+            pom {
+                project {
+                    packaging 'aar'
+                    name PROJECT_NAME
+                    url project.getSiteUrl()
+                    licenses {
+                        license {
+                            name 'The Apache Software License, Version 2.0'
+                            url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                        }
+                    }
+                    developers {
+                        developer {
+                            id user_id
+                            name user_name
+                            email user_email
+                        }
+                    }
+                    scm {
+                        connection project.getGitUrl()
+                        developerConnection project.getGitUrl()
+                        url project.getSiteUrl()
+
+                    }
+                }
+            }
+        }
+    }
+
+    println "passed project install closure"
+
+}
+
+ext {
+
+    if(project.hasBintrayCredentials()){
+        project.setUpBintrayConnection()
+    }
+
+}
+
