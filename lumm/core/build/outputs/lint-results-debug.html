@@ -194,7 +194,7 @@ document.getElementById(id+'Link').style.display = 'none';
 <body>
 <h1>Lint Report</h1>
 <div class="titleSeparator"></div>
-Check performed at Wed Dec 21 22:54:44 CET 2016.<br/>
+Check performed at Mon Dec 26 14:52:44 CET 2016.<br/>
 0 errors and 21 warnings found:<br/><br/>
 <table class="overview">
 <tr><td></td><td class="categoryColumn"><a href="#Performance">Performance</a>
@@ -218,7 +218,7 @@ Check performed at Wed Dec 21 22:54:44 CET 2016.<br/>
 <span class="lineno"> 287</span>             loadOnStartup = (HashMap&lt;String, Boolean>) load(LOAD_ON_STARTUP_PATH);
 <span class="lineno"> 288</span>         } else {
 <span class="lineno"> 289</span>             loadOnStartup = new HashMap&lt;String, Boolean>();
-<span class="lineno"> 290</span>             loadOnStartup.put(GRAPHICS_SETTINGS_PATH, <span class="errorspan">new Boolean(true));</span>
+<span class="lineno"> 290</span>             loadOnStartup.put(GRAPHICS_SETTINGS_PATH, <span class="errorspan">new Boolean(true));</span>
 <span class="lineno"> 291</span>             loadOnStartup.put(AUDIO_SETTINGS_PATH, new Boolean(true));
 <span class="lineno"> 292</span>             save(LOAD_ON_STARTUP_PATH, loadOnStartup, true, true);
 </pre>
@@ -226,7 +226,7 @@ Check performed at Wed Dec 21 22:54:44 CET 2016.<br/>
 <span class="lineno"> 288</span>         } else {
 <span class="lineno"> 289</span>             loadOnStartup = new HashMap&lt;String, Boolean>();
 <span class="lineno"> 290</span>             loadOnStartup.put(GRAPHICS_SETTINGS_PATH, new Boolean(true));
-<span class="lineno"> 291</span>             loadOnStartup.put(AUDIO_SETTINGS_PATH, <span class="errorspan">new Boolean(true));</span>
+<span class="lineno"> 291</span>             loadOnStartup.put(AUDIO_SETTINGS_PATH, <span class="errorspan">new Boolean(true));</span>
 <span class="lineno"> 292</span>             save(LOAD_ON_STARTUP_PATH, loadOnStartup, true, true);
 <span class="lineno"> 293</span> 
 </pre>
@@ -234,7 +234,7 @@ Check performed at Wed Dec 21 22:54:44 CET 2016.<br/>
 <span class="lineno"> 303</span>             graphicSettings = (HashMap&lt;String, Object>) get(GRAPHICS_SETTINGS_PATH);
 <span class="lineno"> 304</span>         } else {
 <span class="lineno"> 305</span>             graphicSettings = new HashMap&lt;String, Object>();
-<span class="lineno"> 306</span>             graphicSettings.put(Settings.PARTICLE_SETTINGS, <span class="errorspan">new Integer(ParticleSettings.MAX));</span>
+<span class="lineno"> 306</span>             graphicSettings.put(Settings.PARTICLE_SETTINGS, <span class="errorspan">new Integer(ParticleSettings.MAX));</span>
 <span class="lineno"> 307</span>             graphicSettings.put(Settings.LINEAR_FILTERING, new Boolean(false));
 <span class="lineno"> 308</span>             graphicSettings.put(Settings.USE_SHADERS, new Boolean(true));
 </pre>
@@ -242,7 +242,7 @@ Check performed at Wed Dec 21 22:54:44 CET 2016.<br/>
 <span class="lineno"> 304</span>         } else {
 <span class="lineno"> 305</span>             graphicSettings = new HashMap&lt;String, Object>();
 <span class="lineno"> 306</span>             graphicSettings.put(Settings.PARTICLE_SETTINGS, new Integer(ParticleSettings.MAX));
-<span class="lineno"> 307</span>             graphicSettings.put(Settings.LINEAR_FILTERING, <span class="errorspan">new Boolean(false));</span>
+<span class="lineno"> 307</span>             graphicSettings.put(Settings.LINEAR_FILTERING, <span class="errorspan">new Boolean(false));</span>
 <span class="lineno"> 308</span>             graphicSettings.put(Settings.USE_SHADERS, new Boolean(true));
 <span class="lineno"> 309</span>             graphicSettings.put(Settings.MULTI_THREADED, new Boolean(false));
 </pre>
@@ -250,7 +250,7 @@ Check performed at Wed Dec 21 22:54:44 CET 2016.<br/>
 <span class="lineno"> 305</span>             graphicSettings = new HashMap&lt;String, Object>();
 <span class="lineno"> 306</span>             graphicSettings.put(Settings.PARTICLE_SETTINGS, new Integer(ParticleSettings.MAX));
 <span class="lineno"> 307</span>             graphicSettings.put(Settings.LINEAR_FILTERING, new Boolean(false));
-<span class="lineno"> 308</span>             graphicSettings.put(Settings.USE_SHADERS, <span class="errorspan">new Boolean(true));</span>
+<span class="lineno"> 308</span>             graphicSettings.put(Settings.USE_SHADERS, <span class="errorspan">new Boolean(true));</span>
 <span class="lineno"> 309</span>             graphicSettings.put(Settings.MULTI_THREADED, new Boolean(false));
 <span class="lineno"> 310</span>             save(GRAPHICS_SETTINGS_PATH, graphicSettings, true, true);
 </pre>
@@ -260,7 +260,7 @@ Check performed at Wed Dec 21 22:54:44 CET 2016.<br/>
 <span class="lineno"> 306</span>             graphicSettings.put(Settings.PARTICLE_SETTINGS, new Integer(ParticleSettings.MAX));
 <span class="lineno"> 307</span>             graphicSettings.put(Settings.LINEAR_FILTERING, new Boolean(false));
 <span class="lineno"> 308</span>             graphicSettings.put(Settings.USE_SHADERS, new Boolean(true));
-<span class="lineno"> 309</span>             graphicSettings.put(Settings.MULTI_THREADED, <span class="errorspan">new Boolean(false));</span>
+<span class="lineno"> 309</span>             graphicSettings.put(Settings.MULTI_THREADED, <span class="errorspan">new Boolean(false));</span>
 <span class="lineno"> 310</span>             save(GRAPHICS_SETTINGS_PATH, graphicSettings, true, true);
 <span class="lineno"> 311</span> 
 </pre>
@@ -268,7 +268,7 @@ Check performed at Wed Dec 21 22:54:44 CET 2016.<br/>
 <span class="lineno"> 315</span>             audioSettings = (HashMap&lt;String, Object>) get(AUDIO_SETTINGS_PATH);
 <span class="lineno"> 316</span>         } else {
 <span class="lineno"> 317</span>             audioSettings = new HashMap&lt;String, Object>();
-<span class="lineno"> 318</span>             audioSettings.put(Audio.MASTER_VOLUME_KEY, <span class="errorspan">new Float(1));</span>
+<span class="lineno"> 318</span>             audioSettings.put(Audio.MASTER_VOLUME_KEY, <span class="errorspan">new Float(1));</span>
 <span class="lineno"> 319</span>             audioSettings.put(Audio.MUSIC_VOLUME_KEY, new Float(1));
 <span class="lineno"> 320</span>             audioSettings.put(Audio.VOICE_VOLUME_KEY, new Float(1));
 </pre>
@@ -276,7 +276,7 @@ Check performed at Wed Dec 21 22:54:44 CET 2016.<br/>
 <span class="lineno"> 316</span>         } else {
 <span class="lineno"> 317</span>             audioSettings = new HashMap&lt;String, Object>();
 <span class="lineno"> 318</span>             audioSettings.put(Audio.MASTER_VOLUME_KEY, new Float(1));
-<span class="lineno"> 319</span>             audioSettings.put(Audio.MUSIC_VOLUME_KEY, <span class="errorspan">new Float(1));</span>
+<span class="lineno"> 319</span>             audioSettings.put(Audio.MUSIC_VOLUME_KEY, <span class="errorspan">new Float(1));</span>
 <span class="lineno"> 320</span>             audioSettings.put(Audio.VOICE_VOLUME_KEY, new Float(1));
 <span class="lineno"> 321</span>             audioSettings.put(Audio.EFFECTS_VOLUME_KEY, new Float(1));
 </pre>
@@ -284,7 +284,7 @@ Check performed at Wed Dec 21 22:54:44 CET 2016.<br/>
 <span class="lineno"> 317</span>             audioSettings = new HashMap&lt;String, Object>();
 <span class="lineno"> 318</span>             audioSettings.put(Audio.MASTER_VOLUME_KEY, new Float(1));
 <span class="lineno"> 319</span>             audioSettings.put(Audio.MUSIC_VOLUME_KEY, new Float(1));
-<span class="lineno"> 320</span>             audioSettings.put(Audio.VOICE_VOLUME_KEY, <span class="errorspan">new Float(1));</span>
+<span class="lineno"> 320</span>             audioSettings.put(Audio.VOICE_VOLUME_KEY, <span class="errorspan">new Float(1));</span>
 <span class="lineno"> 321</span>             audioSettings.put(Audio.EFFECTS_VOLUME_KEY, new Float(1));
 <span class="lineno"> 322</span>             audioSettings.put(Audio.ENVIRONMENT_VOLUME_KEY, new Float(1));
 </pre>
@@ -292,7 +292,7 @@ Check performed at Wed Dec 21 22:54:44 CET 2016.<br/>
 <span class="lineno"> 318</span>             audioSettings.put(Audio.MASTER_VOLUME_KEY, new Float(1));
 <span class="lineno"> 319</span>             audioSettings.put(Audio.MUSIC_VOLUME_KEY, new Float(1));
 <span class="lineno"> 320</span>             audioSettings.put(Audio.VOICE_VOLUME_KEY, new Float(1));
-<span class="lineno"> 321</span>             audioSettings.put(Audio.EFFECTS_VOLUME_KEY, <span class="errorspan">new Float(1));</span>
+<span class="lineno"> 321</span>             audioSettings.put(Audio.EFFECTS_VOLUME_KEY, <span class="errorspan">new Float(1));</span>
 <span class="lineno"> 322</span>             audioSettings.put(Audio.ENVIRONMENT_VOLUME_KEY, new Float(1));
 <span class="lineno"> 323</span>             audioSettings.put(Audio.UI_VOLUME_KEY, new Float(1));
 </pre>
@@ -300,7 +300,7 @@ Check performed at Wed Dec 21 22:54:44 CET 2016.<br/>
 <span class="lineno"> 319</span>             audioSettings.put(Audio.MUSIC_VOLUME_KEY, new Float(1));
 <span class="lineno"> 320</span>             audioSettings.put(Audio.VOICE_VOLUME_KEY, new Float(1));
 <span class="lineno"> 321</span>             audioSettings.put(Audio.EFFECTS_VOLUME_KEY, new Float(1));
-<span class="lineno"> 322</span>             audioSettings.put(Audio.ENVIRONMENT_VOLUME_KEY, <span class="errorspan">new Float(1));</span>
+<span class="lineno"> 322</span>             audioSettings.put(Audio.ENVIRONMENT_VOLUME_KEY, <span class="errorspan">new Float(1));</span>
 <span class="lineno"> 323</span>             audioSettings.put(Audio.UI_VOLUME_KEY, new Float(1));
 <span class="lineno"> 324</span> 
 </pre>
@@ -308,7 +308,7 @@ Check performed at Wed Dec 21 22:54:44 CET 2016.<br/>
 <span class="lineno"> 320</span>             audioSettings.put(Audio.VOICE_VOLUME_KEY, new Float(1));
 <span class="lineno"> 321</span>             audioSettings.put(Audio.EFFECTS_VOLUME_KEY, new Float(1));
 <span class="lineno"> 322</span>             audioSettings.put(Audio.ENVIRONMENT_VOLUME_KEY, new Float(1));
-<span class="lineno"> 323</span>             audioSettings.put(Audio.UI_VOLUME_KEY, <span class="errorspan">new Float(1));</span>
+<span class="lineno"> 323</span>             audioSettings.put(Audio.UI_VOLUME_KEY, <span class="errorspan">new Float(1));</span>
 <span class="lineno"> 324</span> 
 <span class="lineno"> 325</span>             save(AUDIO_SETTINGS_PATH, audioSettings, true, true);
 </pre>
@@ -316,7 +316,7 @@ Check performed at Wed Dec 21 22:54:44 CET 2016.<br/>
 <span class="lineno"> 440</span>                 return;
 <span class="lineno"> 441</span> 
 <span class="lineno"> 442</span>             if (!this.loadOnStartup.containsKey(dataName) || this.loadOnStartup.get(dataName) != loadOnStartup) {
-<span class="lineno"> 443</span>                 this.loadOnStartup.put(dataName, <span class="errorspan">new Boolean(loadOnStartup));</span>
+<span class="lineno"> 443</span>                 this.loadOnStartup.put(dataName, <span class="errorspan">new Boolean(loadOnStartup));</span>
 <span class="lineno"> 444</span>                 save(LOAD_ON_STARTUP_PATH, this.loadOnStartup, false, true);
 <span class="lineno"> 445</span>             }
 </pre>
@@ -324,7 +324,7 @@ Check performed at Wed Dec 21 22:54:44 CET 2016.<br/>
 <span class="lineno">  89</span>     public void setVolume(AudioChannel volume, float value) {
 <span class="lineno">  90</span>         switch (volume) {
 <span class="lineno">  91</span>             case Master:
-<span class="lineno">  92</span>                 Lumm.data.audioSettings.put(MASTER_VOLUME_KEY, <span class="errorspan">new Float(value));</span>
+<span class="lineno">  92</span>                 Lumm.data.audioSettings.put(MASTER_VOLUME_KEY, <span class="errorspan">new Float(value));</span>
 <span class="lineno">  93</span>                 break;
 <span class="lineno">  94</span>             case Music:
 </pre>
@@ -332,7 +332,7 @@ Check performed at Wed Dec 21 22:54:44 CET 2016.<br/>
 <span class="lineno">  92</span>                 Lumm.data.audioSettings.put(MASTER_VOLUME_KEY, new Float(value));
 <span class="lineno">  93</span>                 break;
 <span class="lineno">  94</span>             case Music:
-<span class="lineno">  95</span>                 Lumm.data.audioSettings.put(MUSIC_VOLUME_KEY, <span class="errorspan">new Float(value));</span>
+<span class="lineno">  95</span>                 Lumm.data.audioSettings.put(MUSIC_VOLUME_KEY, <span class="errorspan">new Float(value));</span>
 <span class="lineno">  96</span>                 break;
 <span class="lineno">  97</span>             case Voice:
 </pre>
@@ -340,7 +340,7 @@ Check performed at Wed Dec 21 22:54:44 CET 2016.<br/>
 <span class="lineno">  95</span>                 Lumm.data.audioSettings.put(MUSIC_VOLUME_KEY, new Float(value));
 <span class="lineno">  96</span>                 break;
 <span class="lineno">  97</span>             case Voice:
-<span class="lineno">  98</span>                 Lumm.data.audioSettings.put(VOICE_VOLUME_KEY, <span class="errorspan">new Float(value));</span>
+<span class="lineno">  98</span>                 Lumm.data.audioSettings.put(VOICE_VOLUME_KEY, <span class="errorspan">new Float(value));</span>
 <span class="lineno">  99</span>                 break;
 <span class="lineno"> 100</span>             case Effects:
 </pre>
@@ -348,7 +348,7 @@ Check performed at Wed Dec 21 22:54:44 CET 2016.<br/>
 <span class="lineno">  98</span>                 Lumm.data.audioSettings.put(VOICE_VOLUME_KEY, new Float(value));
 <span class="lineno">  99</span>                 break;
 <span class="lineno"> 100</span>             case Effects:
-<span class="lineno"> 101</span>                 Lumm.data.audioSettings.put(EFFECTS_VOLUME_KEY, <span class="errorspan">new Float(value));</span>
+<span class="lineno"> 101</span>                 Lumm.data.audioSettings.put(EFFECTS_VOLUME_KEY, <span class="errorspan">new Float(value));</span>
 <span class="lineno"> 102</span>                 break;
 <span class="lineno"> 103</span>             case Environment:
 </pre>
@@ -356,7 +356,7 @@ Check performed at Wed Dec 21 22:54:44 CET 2016.<br/>
 <span class="lineno"> 101</span>                 Lumm.data.audioSettings.put(EFFECTS_VOLUME_KEY, new Float(value));
 <span class="lineno"> 102</span>                 break;
 <span class="lineno"> 103</span>             case Environment:
-<span class="lineno"> 104</span>                 Lumm.data.audioSettings.put(ENVIRONMENT_VOLUME_KEY, <span class="errorspan">new Float(value));</span>
+<span class="lineno"> 104</span>                 Lumm.data.audioSettings.put(ENVIRONMENT_VOLUME_KEY, <span class="errorspan">new Float(value));</span>
 <span class="lineno"> 105</span>                 break;
 <span class="lineno"> 106</span>             case UI:
 </pre>
@@ -364,7 +364,7 @@ Check performed at Wed Dec 21 22:54:44 CET 2016.<br/>
 <span class="lineno"> 104</span>                 Lumm.data.audioSettings.put(ENVIRONMENT_VOLUME_KEY, new Float(value));
 <span class="lineno"> 105</span>                 break;
 <span class="lineno"> 106</span>             case UI:
-<span class="lineno"> 107</span>                 Lumm.data.audioSettings.put(UI_VOLUME_KEY, <span class="errorspan">new Float(value));</span>
+<span class="lineno"> 107</span>                 Lumm.data.audioSettings.put(UI_VOLUME_KEY, <span class="errorspan">new Float(value));</span>
 <span class="lineno"> 108</span>                 break;
 <span class="lineno"> 109</span>         }
 </pre>
@@ -372,7 +372,7 @@ Check performed at Wed Dec 21 22:54:44 CET 2016.<br/>
 <span class="lineno"> 119</span>                             + customAudioChannel + "\"",
 <span class="lineno"> 120</span>                     null);
 <span class="lineno"> 121</span>         }
-<span class="lineno"> 122</span>         Lumm.data.audioSettings.put(customAudioChannel, <span class="errorspan">new Float(value));</span>
+<span class="lineno"> 122</span>         Lumm.data.audioSettings.put(customAudioChannel, <span class="errorspan">new Float(value));</span>
 <span class="lineno"> 123</span>         Lumm.data.save(AppData.AUDIO_SETTINGS_PATH, Lumm.data.audioSettings, true, true);
 <span class="lineno"> 124</span> 
 </pre>
@@ -380,7 +380,7 @@ Check performed at Wed Dec 21 22:54:44 CET 2016.<br/>
 <span class="lineno"> 153</span> 
 <span class="lineno"> 154</span>     public float getVolume(String customAudioChannel) {
 <span class="lineno"> 155</span>         if (!Lumm.data.audioSettings.containsKey(customAudioChannel))
-<span class="lineno"> 156</span>             Lumm.data.audioSettings.put(customAudioChannel, <span class="errorspan">new Float(1));</span>
+<span class="lineno"> 156</span>             Lumm.data.audioSettings.put(customAudioChannel, <span class="errorspan">new Float(1));</span>
 <span class="lineno"> 157</span> 
 <span class="lineno"> 158</span>         return ((Float) (Lumm.data.audioSettings.get(customAudioChannel)));
 </pre>

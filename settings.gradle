@@ -1,1 +1,4 @@
-include ':lumm/core'
+include 'core'
+rootProject.children.each { project ->
+    project.projectDir = new File("$rootDir/lumm/$project.name")
+}

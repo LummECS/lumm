@@ -1,15 +1,15 @@
 
 
-group = PROJECT_GROUP
-version = PROJECT_VERSION
+group = project__group
+version = project__version
 
 publishing {
     publications {
         BintrayPublication(MavenPublication) {
             from components.java
-            groupId PROJECT_GROUP
-            artifactId PROJECT_NAME
-            version PROJECT_VERSION
+            groupId project__group
+            artifactId project.getProjectName()
+            version project__version
         }
     }
 }
@@ -21,16 +21,16 @@ bintray {
     publish = true //If version should be auto published after an upload
     pkg {
         repo = PROJECT_REPO
-        name = PROJECT_NAME
-        userOrg = PROJECT_ORGANIZATION
+        name = project.getProjectName()
+        userOrg = project_org
         licenses = ['Apache-2.0']
         vcsUrl = PROJECT_VCS_URL
         publicDownloadNumbers = true
         version {
-            name = PROJECT_VERSION
-            desc = PROJECT_VERSION_DESCRIPTION
+            name = project__version
+            desc = project__version_description
             released  = new Date()
-            vcsTag = PROJECT_VERSION
+            vcsTag = project__version
         }
     }
 }

@@ -24,9 +24,9 @@ allprojects {
 
 }
 subprojects {
-    apply from:"$rootDir\\gradle\\vars.gradle"
-    apply from:"$rootDir\\gradle\\utils.gradle"
-    apply from:"$rootDir\\gradle\\bintray.gradle"
+    apply from:"$rootDir/gradle/vars.gradle"
+    apply from:"$rootDir/gradle/init_android_library.gradle"
+    apply from:"$rootDir/gradle/bintray.gradle"
 
 
 //    print hasBintrayCredentials()
