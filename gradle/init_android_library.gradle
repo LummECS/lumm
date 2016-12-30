@@ -1,5 +1,9 @@
 ext.getProjectName = {
-    return project.name.substring(project.name.lastIndexOf('/') + 1)
+    if (project.hasProperty('project__artifact_id')){
+        return project.hasProperty('project')
+    }
+    project.name.substring(project.name.lastIndexOf('/') + 1)
+
 }
 
 apply plugin: 'com.android.library'

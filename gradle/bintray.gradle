@@ -36,9 +36,9 @@ ext.setUpBintrayConnection = {
                     }
                     developers {
                         developer {
-                            id project.getProperties().getOrDefault("user_id", "sreal")
-                            name project.getProperties().getOrDefault("user_name", "sidereal")
-                            email project.getProperties().getOrDefault("user_email", "contact@sidereal.dk")
+                            id project.getProperties().getOrDefault("user__id", "sreal")
+                            name project.getProperties().getOrDefault("user__name", "sidereal")
+                            email project.getProperties().getOrDefault("user__email", "contact@sidereal.dk")
                         }
                     }
                     scm {
@@ -93,6 +93,45 @@ ext.setUpBintrayConnection = {
 
 project.setUpBintrayConnection()
 
+task hasPublishingProperties = {
 
+    def checkProperty = { String propertyName, String defaultValue ->
+
+        if(project.hasProperty()){
+            println 'Property \'$propertyName\' found, value is $project.getProperties.get(propertyName)'
+        }else {
+            if(defaultValue != null){
+                println 'Property \'$propertyName\' found, default value is $defaultValue'
+            }else{
+                println 'Property \'$propertyName\' found'
+            }
+        }
+    }
+
+    println 'Checking project-related properties'
+    println 'Project artifactId is '
+    checkProperty propertyName: 'project__group', defaultValue: 'dk.sidereal.lumm'
+    checkProperty propertyName: 'project__repo', defaultValue: 'lumm'
+    checkProperty propertyName: 'project__org', defaultValue: 'sidereal'
+    checkProperty propertyName: 'project__description'
+
+    println 'Checking version-related properties'
+    checkProperty propertyName: 'project__version'
+    checkProperty propertyName: 'project__version_description'
+
+
+    project__org=sidereal
+    project__version=0.1.13
+    project__url_root=https://github.com/LummECS/
+
+
+    project__repo=lumm
+    project__group=dk.sidereal.lumm
+    project__description=Lumm core library
+    project__version_description=Alpha version, focused on publishing scripts
+
+
+
+}
 
 
