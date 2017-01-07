@@ -2,9 +2,10 @@ apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
 apply plugin: 'maven'
 
-def userNameProperty = 'lumm_bintray_username'
-def apiKeyProperty = 'lumm_bintray_api_key'
+def userNameProperty = 'lumm__bintray_username'
+def apiKeyProperty = 'lumm__bintray_api_key'
 def warningNoCredentials = 'You need \'' + userNameProperty + '\' and \'' + apiKeyProperty + '\' properties to set up bintray'
+
 
 ext.hasBintrayCredentials = {
     return project.hasProperty(userNameProperty) && project.hasProperty(apiKeyProperty)
@@ -36,9 +37,9 @@ ext.setUpBintrayConnection = {
                     }
                     developers {
                         developer {
-                            id project.getProperties().getOrDefault("user__id", "sreal")
-                            name project.getProperties().getOrDefault("user__name", "sidereal")
-                            email project.getProperties().getOrDefault("user__email", "contact@sidereal.dk")
+                            id project.getProperties().getOrDefault('user__id', 'sreal')
+                            name project.getProperties().getOrDefault('user__name', 'sidereal')
+                            email project.getProperties().getOrDefault('user__email', 'contact@sidereal.dk')
                         }
                     }
                     scm {
@@ -54,8 +55,8 @@ ext.setUpBintrayConnection = {
 
 
     project.bintray {
-        user = lumm_bintray_username
-        key = lumm_bintray_api_key
+        user = lumm__bintray_username
+        key = lumm__bintray_api_key
 
         configurations = ['archives']
 
@@ -82,56 +83,12 @@ ext.setUpBintrayConnection = {
     }
 
     println "passed project install maven closure setup"
-
-    println version + " " + project.version
-    println group + " " + project.group
-    println project.getGitUrl()
-    println project.getSiteUrl()
-    println project.getIssuesUrl()
-    println project.getProjectName()
 }
 
 project.setUpBintrayConnection()
 
-task hasPublishingProperties = {
-
-    def checkProperty = { String propertyName, String defaultValue ->
-
-        if(project.hasProperty()){
-            println 'Property \'$propertyName\' found, value is $project.getProperties.get(propertyName)'
-        }else {
-            if(defaultValue != null){
-                println 'Property \'$propertyName\' found, default value is $defaultValue'
-            }else{
-                println 'Property \'$propertyName\' found'
-            }
-        }
-    }
-
-    println 'Checking project-related properties'
-    println 'Project artifactId is '
-    checkProperty propertyName: 'project__group', defaultValue: 'dk.sidereal.lumm'
-    checkProperty propertyName: 'project__repo', defaultValue: 'lumm'
-    checkProperty propertyName: 'project__org', defaultValue: 'sidereal'
-    checkProperty propertyName: 'project__description'
-
-    println 'Checking version-related properties'
-    checkProperty propertyName: 'project__version'
-    checkProperty propertyName: 'project__version_description'
-
-
-    project__org=sidereal
-    project__version=0.1.13
-    project__url_root=https://github.com/LummECS/
-
-
-    project__repo=lumm
-    project__group=dk.sidereal.lumm
-    project__description=Lumm core library
-    project__version_description=Alpha version, focused on publishing scripts
 
 
 
-}
 
 

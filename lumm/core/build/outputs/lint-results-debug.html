@@ -194,7 +194,7 @@ document.getElementById(id+'Link').style.display = 'none';
 <body>
 <h1>Lint Report</h1>
 <div class="titleSeparator"></div>
-Check performed at Mon Dec 26 20:20:35 CET 2016.<br/>
+Check performed at Fri Dec 30 13:32:08 CET 2016.<br/>
 0 errors and 21 warnings found:<br/><br/>
 <table class="overview">
 <tr><td></td><td class="categoryColumn"><a href="#Performance">Performance</a>
@@ -214,175 +214,175 @@ Check performed at Mon Dec 26 20:20:35 CET 2016.<br/>
 <div class="id"><a href="#" title="Return to top">UseValueOf: Should use <code>valueOf</code> instead of <code>new</code></a><div class="issueSeparator"></div>
 </div>
 <div class="warningslist">
-<span class="location"><a href="../../src/main/java/com/sidereal/lumm/architecture/core/AppData.java">../../src/main/java/com/sidereal/lumm/architecture/core/AppData.java</a>:290</span>: <span class="message">Use <code>Boolean.valueOf(true)</code> instead</span><br /><pre class="errorlines">
+<span class="location"><a href="../../src/main/java/dk/sidereal/lumm/architecture/core/AppData.java">../../src/main/java/dk/sidereal/lumm/architecture/core/AppData.java</a>:290</span>: <span class="message">Use <code>Boolean.valueOf(true)</code> instead</span><br /><pre class="errorlines">
 <span class="lineno"> 287</span>             loadOnStartup = (HashMap&lt;String, Boolean>) load(LOAD_ON_STARTUP_PATH);
 <span class="lineno"> 288</span>         } else {
 <span class="lineno"> 289</span>             loadOnStartup = new HashMap&lt;String, Boolean>();
-<span class="lineno"> 290</span>             loadOnStartup.put(GRAPHICS_SETTINGS_PATH, <span class="errorspan">new Boolean(true));</span>
+<span class="lineno"> 290</span>             loadOnStartup.put(GRAPHICS_SETTINGS_PATH, <span class="errorspan">new Boolean(true));</span>
 <span class="lineno"> 291</span>             loadOnStartup.put(AUDIO_SETTINGS_PATH, new Boolean(true));
 <span class="lineno"> 292</span>             save(LOAD_ON_STARTUP_PATH, loadOnStartup, true, true);
 </pre>
-<span class="location"><a href="../../src/main/java/com/sidereal/lumm/architecture/core/AppData.java">../../src/main/java/com/sidereal/lumm/architecture/core/AppData.java</a>:291</span>: <span class="message">Use <code>Boolean.valueOf(true)</code> instead</span><br /><pre class="errorlines">
+<span class="location"><a href="../../src/main/java/dk/sidereal/lumm/architecture/core/AppData.java">../../src/main/java/dk/sidereal/lumm/architecture/core/AppData.java</a>:291</span>: <span class="message">Use <code>Boolean.valueOf(true)</code> instead</span><br /><pre class="errorlines">
 <span class="lineno"> 288</span>         } else {
 <span class="lineno"> 289</span>             loadOnStartup = new HashMap&lt;String, Boolean>();
 <span class="lineno"> 290</span>             loadOnStartup.put(GRAPHICS_SETTINGS_PATH, new Boolean(true));
-<span class="lineno"> 291</span>             loadOnStartup.put(AUDIO_SETTINGS_PATH, <span class="errorspan">new Boolean(true));</span>
+<span class="lineno"> 291</span>             loadOnStartup.put(AUDIO_SETTINGS_PATH, <span class="errorspan">new Boolean(true));</span>
 <span class="lineno"> 292</span>             save(LOAD_ON_STARTUP_PATH, loadOnStartup, true, true);
 <span class="lineno"> 293</span> 
 </pre>
-<span class="location"><a href="../../src/main/java/com/sidereal/lumm/architecture/core/AppData.java">../../src/main/java/com/sidereal/lumm/architecture/core/AppData.java</a>:306</span>: <span class="message">Use <code>Integer.valueOf(ParticleSettings.MAX)</code> instead</span><br /><pre class="errorlines">
+<span class="location"><a href="../../src/main/java/dk/sidereal/lumm/architecture/core/AppData.java">../../src/main/java/dk/sidereal/lumm/architecture/core/AppData.java</a>:306</span>: <span class="message">Use <code>Integer.valueOf(ParticleSettings.MAX)</code> instead</span><br /><pre class="errorlines">
 <span class="lineno"> 303</span>             graphicSettings = (HashMap&lt;String, Object>) get(GRAPHICS_SETTINGS_PATH);
 <span class="lineno"> 304</span>         } else {
 <span class="lineno"> 305</span>             graphicSettings = new HashMap&lt;String, Object>();
-<span class="lineno"> 306</span>             graphicSettings.put(Settings.PARTICLE_SETTINGS, <span class="errorspan">new Integer(ParticleSettings.MAX));</span>
+<span class="lineno"> 306</span>             graphicSettings.put(Settings.PARTICLE_SETTINGS, <span class="errorspan">new Integer(ParticleSettings.MAX));</span>
 <span class="lineno"> 307</span>             graphicSettings.put(Settings.LINEAR_FILTERING, new Boolean(false));
 <span class="lineno"> 308</span>             graphicSettings.put(Settings.USE_SHADERS, new Boolean(true));
 </pre>
-<span class="location"><a href="../../src/main/java/com/sidereal/lumm/architecture/core/AppData.java">../../src/main/java/com/sidereal/lumm/architecture/core/AppData.java</a>:307</span>: <span class="message">Use <code>Boolean.valueOf(false)</code> instead</span><br /><pre class="errorlines">
+<span class="location"><a href="../../src/main/java/dk/sidereal/lumm/architecture/core/AppData.java">../../src/main/java/dk/sidereal/lumm/architecture/core/AppData.java</a>:307</span>: <span class="message">Use <code>Boolean.valueOf(false)</code> instead</span><br /><pre class="errorlines">
 <span class="lineno"> 304</span>         } else {
 <span class="lineno"> 305</span>             graphicSettings = new HashMap&lt;String, Object>();
 <span class="lineno"> 306</span>             graphicSettings.put(Settings.PARTICLE_SETTINGS, new Integer(ParticleSettings.MAX));
-<span class="lineno"> 307</span>             graphicSettings.put(Settings.LINEAR_FILTERING, <span class="errorspan">new Boolean(false));</span>
+<span class="lineno"> 307</span>             graphicSettings.put(Settings.LINEAR_FILTERING, <span class="errorspan">new Boolean(false));</span>
 <span class="lineno"> 308</span>             graphicSettings.put(Settings.USE_SHADERS, new Boolean(true));
 <span class="lineno"> 309</span>             graphicSettings.put(Settings.MULTI_THREADED, new Boolean(false));
 </pre>
-<span class="location"><a href="../../src/main/java/com/sidereal/lumm/architecture/core/AppData.java">../../src/main/java/com/sidereal/lumm/architecture/core/AppData.java</a>:308</span>: <span class="message">Use <code>Boolean.valueOf(true)</code> instead</span><br /><pre class="errorlines">
+<span class="location"><a href="../../src/main/java/dk/sidereal/lumm/architecture/core/AppData.java">../../src/main/java/dk/sidereal/lumm/architecture/core/AppData.java</a>:308</span>: <span class="message">Use <code>Boolean.valueOf(true)</code> instead</span><br /><pre class="errorlines">
 <span class="lineno"> 305</span>             graphicSettings = new HashMap&lt;String, Object>();
 <span class="lineno"> 306</span>             graphicSettings.put(Settings.PARTICLE_SETTINGS, new Integer(ParticleSettings.MAX));
 <span class="lineno"> 307</span>             graphicSettings.put(Settings.LINEAR_FILTERING, new Boolean(false));
-<span class="lineno"> 308</span>             graphicSettings.put(Settings.USE_SHADERS, <span class="errorspan">new Boolean(true));</span>
+<span class="lineno"> 308</span>             graphicSettings.put(Settings.USE_SHADERS, <span class="errorspan">new Boolean(true));</span>
 <span class="lineno"> 309</span>             graphicSettings.put(Settings.MULTI_THREADED, new Boolean(false));
 <span class="lineno"> 310</span>             save(GRAPHICS_SETTINGS_PATH, graphicSettings, true, true);
 </pre>
 <button id="UseValueOfDivLink" onclick="reveal('UseValueOfDiv');" />+ 16 More Occurrences...</button>
 <div id="UseValueOfDiv" style="display: none">
-<span class="location"><a href="../../src/main/java/com/sidereal/lumm/architecture/core/AppData.java">../../src/main/java/com/sidereal/lumm/architecture/core/AppData.java</a>:309</span>: <span class="message">Use <code>Boolean.valueOf(false)</code> instead</span><br /><pre class="errorlines">
+<span class="location"><a href="../../src/main/java/dk/sidereal/lumm/architecture/core/AppData.java">../../src/main/java/dk/sidereal/lumm/architecture/core/AppData.java</a>:309</span>: <span class="message">Use <code>Boolean.valueOf(false)</code> instead</span><br /><pre class="errorlines">
 <span class="lineno"> 306</span>             graphicSettings.put(Settings.PARTICLE_SETTINGS, new Integer(ParticleSettings.MAX));
 <span class="lineno"> 307</span>             graphicSettings.put(Settings.LINEAR_FILTERING, new Boolean(false));
 <span class="lineno"> 308</span>             graphicSettings.put(Settings.USE_SHADERS, new Boolean(true));
-<span class="lineno"> 309</span>             graphicSettings.put(Settings.MULTI_THREADED, <span class="errorspan">new Boolean(false));</span>
+<span class="lineno"> 309</span>             graphicSettings.put(Settings.MULTI_THREADED, <span class="errorspan">new Boolean(false));</span>
 <span class="lineno"> 310</span>             save(GRAPHICS_SETTINGS_PATH, graphicSettings, true, true);
 <span class="lineno"> 311</span> 
 </pre>
-<span class="location"><a href="../../src/main/java/com/sidereal/lumm/architecture/core/AppData.java">../../src/main/java/com/sidereal/lumm/architecture/core/AppData.java</a>:318</span>: <span class="message">Use <code>Float.valueOf(1)</code> instead</span><br /><pre class="errorlines">
+<span class="location"><a href="../../src/main/java/dk/sidereal/lumm/architecture/core/AppData.java">../../src/main/java/dk/sidereal/lumm/architecture/core/AppData.java</a>:318</span>: <span class="message">Use <code>Float.valueOf(1)</code> instead</span><br /><pre class="errorlines">
 <span class="lineno"> 315</span>             audioSettings = (HashMap&lt;String, Object>) get(AUDIO_SETTINGS_PATH);
 <span class="lineno"> 316</span>         } else {
 <span class="lineno"> 317</span>             audioSettings = new HashMap&lt;String, Object>();
-<span class="lineno"> 318</span>             audioSettings.put(Audio.MASTER_VOLUME_KEY, <span class="errorspan">new Float(1));</span>
+<span class="lineno"> 318</span>             audioSettings.put(Audio.MASTER_VOLUME_KEY, <span class="errorspan">new Float(1));</span>
 <span class="lineno"> 319</span>             audioSettings.put(Audio.MUSIC_VOLUME_KEY, new Float(1));
 <span class="lineno"> 320</span>             audioSettings.put(Audio.VOICE_VOLUME_KEY, new Float(1));
 </pre>
-<span class="location"><a href="../../src/main/java/com/sidereal/lumm/architecture/core/AppData.java">../../src/main/java/com/sidereal/lumm/architecture/core/AppData.java</a>:319</span>: <span class="message">Use <code>Float.valueOf(1)</code> instead</span><br /><pre class="errorlines">
+<span class="location"><a href="../../src/main/java/dk/sidereal/lumm/architecture/core/AppData.java">../../src/main/java/dk/sidereal/lumm/architecture/core/AppData.java</a>:319</span>: <span class="message">Use <code>Float.valueOf(1)</code> instead</span><br /><pre class="errorlines">
 <span class="lineno"> 316</span>         } else {
 <span class="lineno"> 317</span>             audioSettings = new HashMap&lt;String, Object>();
 <span class="lineno"> 318</span>             audioSettings.put(Audio.MASTER_VOLUME_KEY, new Float(1));
-<span class="lineno"> 319</span>             audioSettings.put(Audio.MUSIC_VOLUME_KEY, <span class="errorspan">new Float(1));</span>
+<span class="lineno"> 319</span>             audioSettings.put(Audio.MUSIC_VOLUME_KEY, <span class="errorspan">new Float(1));</span>
 <span class="lineno"> 320</span>             audioSettings.put(Audio.VOICE_VOLUME_KEY, new Float(1));
 <span class="lineno"> 321</span>             audioSettings.put(Audio.EFFECTS_VOLUME_KEY, new Float(1));
 </pre>
-<span class="location"><a href="../../src/main/java/com/sidereal/lumm/architecture/core/AppData.java">../../src/main/java/com/sidereal/lumm/architecture/core/AppData.java</a>:320</span>: <span class="message">Use <code>Float.valueOf(1)</code> instead</span><br /><pre class="errorlines">
+<span class="location"><a href="../../src/main/java/dk/sidereal/lumm/architecture/core/AppData.java">../../src/main/java/dk/sidereal/lumm/architecture/core/AppData.java</a>:320</span>: <span class="message">Use <code>Float.valueOf(1)</code> instead</span><br /><pre class="errorlines">
 <span class="lineno"> 317</span>             audioSettings = new HashMap&lt;String, Object>();
 <span class="lineno"> 318</span>             audioSettings.put(Audio.MASTER_VOLUME_KEY, new Float(1));
 <span class="lineno"> 319</span>             audioSettings.put(Audio.MUSIC_VOLUME_KEY, new Float(1));
-<span class="lineno"> 320</span>             audioSettings.put(Audio.VOICE_VOLUME_KEY, <span class="errorspan">new Float(1));</span>
+<span class="lineno"> 320</span>             audioSettings.put(Audio.VOICE_VOLUME_KEY, <span class="errorspan">new Float(1));</span>
 <span class="lineno"> 321</span>             audioSettings.put(Audio.EFFECTS_VOLUME_KEY, new Float(1));
 <span class="lineno"> 322</span>             audioSettings.put(Audio.ENVIRONMENT_VOLUME_KEY, new Float(1));
 </pre>
-<span class="location"><a href="../../src/main/java/com/sidereal/lumm/architecture/core/AppData.java">../../src/main/java/com/sidereal/lumm/architecture/core/AppData.java</a>:321</span>: <span class="message">Use <code>Float.valueOf(1)</code> instead</span><br /><pre class="errorlines">
+<span class="location"><a href="../../src/main/java/dk/sidereal/lumm/architecture/core/AppData.java">../../src/main/java/dk/sidereal/lumm/architecture/core/AppData.java</a>:321</span>: <span class="message">Use <code>Float.valueOf(1)</code> instead</span><br /><pre class="errorlines">
 <span class="lineno"> 318</span>             audioSettings.put(Audio.MASTER_VOLUME_KEY, new Float(1));
 <span class="lineno"> 319</span>             audioSettings.put(Audio.MUSIC_VOLUME_KEY, new Float(1));
 <span class="lineno"> 320</span>             audioSettings.put(Audio.VOICE_VOLUME_KEY, new Float(1));
-<span class="lineno"> 321</span>             audioSettings.put(Audio.EFFECTS_VOLUME_KEY, <span class="errorspan">new Float(1));</span>
+<span class="lineno"> 321</span>             audioSettings.put(Audio.EFFECTS_VOLUME_KEY, <span class="errorspan">new Float(1));</span>
 <span class="lineno"> 322</span>             audioSettings.put(Audio.ENVIRONMENT_VOLUME_KEY, new Float(1));
 <span class="lineno"> 323</span>             audioSettings.put(Audio.UI_VOLUME_KEY, new Float(1));
 </pre>
-<span class="location"><a href="../../src/main/java/com/sidereal/lumm/architecture/core/AppData.java">../../src/main/java/com/sidereal/lumm/architecture/core/AppData.java</a>:322</span>: <span class="message">Use <code>Float.valueOf(1)</code> instead</span><br /><pre class="errorlines">
+<span class="location"><a href="../../src/main/java/dk/sidereal/lumm/architecture/core/AppData.java">../../src/main/java/dk/sidereal/lumm/architecture/core/AppData.java</a>:322</span>: <span class="message">Use <code>Float.valueOf(1)</code> instead</span><br /><pre class="errorlines">
 <span class="lineno"> 319</span>             audioSettings.put(Audio.MUSIC_VOLUME_KEY, new Float(1));
 <span class="lineno"> 320</span>             audioSettings.put(Audio.VOICE_VOLUME_KEY, new Float(1));
 <span class="lineno"> 321</span>             audioSettings.put(Audio.EFFECTS_VOLUME_KEY, new Float(1));
-<span class="lineno"> 322</span>             audioSettings.put(Audio.ENVIRONMENT_VOLUME_KEY, <span class="errorspan">new Float(1));</span>
+<span class="lineno"> 322</span>             audioSettings.put(Audio.ENVIRONMENT_VOLUME_KEY, <span class="errorspan">new Float(1));</span>
 <span class="lineno"> 323</span>             audioSettings.put(Audio.UI_VOLUME_KEY, new Float(1));
 <span class="lineno"> 324</span> 
 </pre>
-<span class="location"><a href="../../src/main/java/com/sidereal/lumm/architecture/core/AppData.java">../../src/main/java/com/sidereal/lumm/architecture/core/AppData.java</a>:323</span>: <span class="message">Use <code>Float.valueOf(1)</code> instead</span><br /><pre class="errorlines">
+<span class="location"><a href="../../src/main/java/dk/sidereal/lumm/architecture/core/AppData.java">../../src/main/java/dk/sidereal/lumm/architecture/core/AppData.java</a>:323</span>: <span class="message">Use <code>Float.valueOf(1)</code> instead</span><br /><pre class="errorlines">
 <span class="lineno"> 320</span>             audioSettings.put(Audio.VOICE_VOLUME_KEY, new Float(1));
 <span class="lineno"> 321</span>             audioSettings.put(Audio.EFFECTS_VOLUME_KEY, new Float(1));
 <span class="lineno"> 322</span>             audioSettings.put(Audio.ENVIRONMENT_VOLUME_KEY, new Float(1));
-<span class="lineno"> 323</span>             audioSettings.put(Audio.UI_VOLUME_KEY, <span class="errorspan">new Float(1));</span>
+<span class="lineno"> 323</span>             audioSettings.put(Audio.UI_VOLUME_KEY, <span class="errorspan">new Float(1));</span>
 <span class="lineno"> 324</span> 
 <span class="lineno"> 325</span>             save(AUDIO_SETTINGS_PATH, audioSettings, true, true);
 </pre>
-<span class="location"><a href="../../src/main/java/com/sidereal/lumm/architecture/core/AppData.java">../../src/main/java/com/sidereal/lumm/architecture/core/AppData.java</a>:443</span>: <span class="message">Use <code>Boolean.valueOf(loadOnStartup)</code> instead</span><br /><pre class="errorlines">
+<span class="location"><a href="../../src/main/java/dk/sidereal/lumm/architecture/core/AppData.java">../../src/main/java/dk/sidereal/lumm/architecture/core/AppData.java</a>:443</span>: <span class="message">Use <code>Boolean.valueOf(loadOnStartup)</code> instead</span><br /><pre class="errorlines">
 <span class="lineno"> 440</span>                 return;
 <span class="lineno"> 441</span> 
 <span class="lineno"> 442</span>             if (!this.loadOnStartup.containsKey(dataName) || this.loadOnStartup.get(dataName) != loadOnStartup) {
-<span class="lineno"> 443</span>                 this.loadOnStartup.put(dataName, <span class="errorspan">new Boolean(loadOnStartup));</span>
+<span class="lineno"> 443</span>                 this.loadOnStartup.put(dataName, <span class="errorspan">new Boolean(loadOnStartup));</span>
 <span class="lineno"> 444</span>                 save(LOAD_ON_STARTUP_PATH, this.loadOnStartup, false, true);
 <span class="lineno"> 445</span>             }
 </pre>
-<span class="location"><a href="../../src/main/java/com/sidereal/lumm/architecture/core/Audio.java">../../src/main/java/com/sidereal/lumm/architecture/core/Audio.java</a>:92</span>: <span class="message">Use <code>Float.valueOf(value)</code> instead</span><br /><pre class="errorlines">
-<span class="lineno">  89</span>     public void setVolume(AudioChannel volume, float value) {
-<span class="lineno">  90</span>         switch (volume) {
-<span class="lineno">  91</span>             case Master:
-<span class="lineno">  92</span>                 Lumm.data.audioSettings.put(MASTER_VOLUME_KEY, <span class="errorspan">new Float(value));</span>
-<span class="lineno">  93</span>                 break;
-<span class="lineno">  94</span>             case Music:
+<span class="location"><a href="../../src/main/java/dk/sidereal/lumm/architecture/core/Audio.java">../../src/main/java/dk/sidereal/lumm/architecture/core/Audio.java</a>:91</span>: <span class="message">Use <code>Float.valueOf(value)</code> instead</span><br /><pre class="errorlines">
+<span class="lineno">  88</span>     public void setVolume(AudioChannel volume, float value) {
+<span class="lineno">  89</span>         switch (volume) {
+<span class="lineno">  90</span>             case Master:
+<span class="lineno">  91</span>                 Lumm.data.audioSettings.put(MASTER_VOLUME_KEY, <span class="errorspan">new Float(value));</span>
+<span class="lineno">  92</span>                 break;
+<span class="lineno">  93</span>             case Music:
 </pre>
-<span class="location"><a href="../../src/main/java/com/sidereal/lumm/architecture/core/Audio.java">../../src/main/java/com/sidereal/lumm/architecture/core/Audio.java</a>:95</span>: <span class="message">Use <code>Float.valueOf(value)</code> instead</span><br /><pre class="errorlines">
-<span class="lineno">  92</span>                 Lumm.data.audioSettings.put(MASTER_VOLUME_KEY, new Float(value));
-<span class="lineno">  93</span>                 break;
-<span class="lineno">  94</span>             case Music:
-<span class="lineno">  95</span>                 Lumm.data.audioSettings.put(MUSIC_VOLUME_KEY, <span class="errorspan">new Float(value));</span>
-<span class="lineno">  96</span>                 break;
-<span class="lineno">  97</span>             case Voice:
+<span class="location"><a href="../../src/main/java/dk/sidereal/lumm/architecture/core/Audio.java">../../src/main/java/dk/sidereal/lumm/architecture/core/Audio.java</a>:94</span>: <span class="message">Use <code>Float.valueOf(value)</code> instead</span><br /><pre class="errorlines">
+<span class="lineno">  91</span>                 Lumm.data.audioSettings.put(MASTER_VOLUME_KEY, new Float(value));
+<span class="lineno">  92</span>                 break;
+<span class="lineno">  93</span>             case Music:
+<span class="lineno">  94</span>                 Lumm.data.audioSettings.put(MUSIC_VOLUME_KEY, <span class="errorspan">new Float(value));</span>
+<span class="lineno">  95</span>                 break;
+<span class="lineno">  96</span>             case Voice:
 </pre>
-<span class="location"><a href="../../src/main/java/com/sidereal/lumm/architecture/core/Audio.java">../../src/main/java/com/sidereal/lumm/architecture/core/Audio.java</a>:98</span>: <span class="message">Use <code>Float.valueOf(value)</code> instead</span><br /><pre class="errorlines">
-<span class="lineno">  95</span>                 Lumm.data.audioSettings.put(MUSIC_VOLUME_KEY, new Float(value));
-<span class="lineno">  96</span>                 break;
-<span class="lineno">  97</span>             case Voice:
-<span class="lineno">  98</span>                 Lumm.data.audioSettings.put(VOICE_VOLUME_KEY, <span class="errorspan">new Float(value));</span>
-<span class="lineno">  99</span>                 break;
-<span class="lineno"> 100</span>             case Effects:
+<span class="location"><a href="../../src/main/java/dk/sidereal/lumm/architecture/core/Audio.java">../../src/main/java/dk/sidereal/lumm/architecture/core/Audio.java</a>:97</span>: <span class="message">Use <code>Float.valueOf(value)</code> instead</span><br /><pre class="errorlines">
+<span class="lineno">  94</span>                 Lumm.data.audioSettings.put(MUSIC_VOLUME_KEY, new Float(value));
+<span class="lineno">  95</span>                 break;
+<span class="lineno">  96</span>             case Voice:
+<span class="lineno">  97</span>                 Lumm.data.audioSettings.put(VOICE_VOLUME_KEY, <span class="errorspan">new Float(value));</span>
+<span class="lineno">  98</span>                 break;
+<span class="lineno">  99</span>             case Effects:
 </pre>
-<span class="location"><a href="../../src/main/java/com/sidereal/lumm/architecture/core/Audio.java">../../src/main/java/com/sidereal/lumm/architecture/core/Audio.java</a>:101</span>: <span class="message">Use <code>Float.valueOf(value)</code> instead</span><br /><pre class="errorlines">
-<span class="lineno">  98</span>                 Lumm.data.audioSettings.put(VOICE_VOLUME_KEY, new Float(value));
-<span class="lineno">  99</span>                 break;
-<span class="lineno"> 100</span>             case Effects:
-<span class="lineno"> 101</span>                 Lumm.data.audioSettings.put(EFFECTS_VOLUME_KEY, <span class="errorspan">new Float(value));</span>
-<span class="lineno"> 102</span>                 break;
-<span class="lineno"> 103</span>             case Environment:
+<span class="location"><a href="../../src/main/java/dk/sidereal/lumm/architecture/core/Audio.java">../../src/main/java/dk/sidereal/lumm/architecture/core/Audio.java</a>:100</span>: <span class="message">Use <code>Float.valueOf(value)</code> instead</span><br /><pre class="errorlines">
+<span class="lineno">  97</span>                 Lumm.data.audioSettings.put(VOICE_VOLUME_KEY, new Float(value));
+<span class="lineno">  98</span>                 break;
+<span class="lineno">  99</span>             case Effects:
+<span class="lineno"> 100</span>                 Lumm.data.audioSettings.put(EFFECTS_VOLUME_KEY, <span class="errorspan">new Float(value));</span>
+<span class="lineno"> 101</span>                 break;
+<span class="lineno"> 102</span>             case Environment:
 </pre>
-<span class="location"><a href="../../src/main/java/com/sidereal/lumm/architecture/core/Audio.java">../../src/main/java/com/sidereal/lumm/architecture/core/Audio.java</a>:104</span>: <span class="message">Use <code>Float.valueOf(value)</code> instead</span><br /><pre class="errorlines">
-<span class="lineno"> 101</span>                 Lumm.data.audioSettings.put(EFFECTS_VOLUME_KEY, new Float(value));
-<span class="lineno"> 102</span>                 break;
-<span class="lineno"> 103</span>             case Environment:
-<span class="lineno"> 104</span>                 Lumm.data.audioSettings.put(ENVIRONMENT_VOLUME_KEY, <span class="errorspan">new Float(value));</span>
-<span class="lineno"> 105</span>                 break;
-<span class="lineno"> 106</span>             case UI:
+<span class="location"><a href="../../src/main/java/dk/sidereal/lumm/architecture/core/Audio.java">../../src/main/java/dk/sidereal/lumm/architecture/core/Audio.java</a>:103</span>: <span class="message">Use <code>Float.valueOf(value)</code> instead</span><br /><pre class="errorlines">
+<span class="lineno"> 100</span>                 Lumm.data.audioSettings.put(EFFECTS_VOLUME_KEY, new Float(value));
+<span class="lineno"> 101</span>                 break;
+<span class="lineno"> 102</span>             case Environment:
+<span class="lineno"> 103</span>                 Lumm.data.audioSettings.put(ENVIRONMENT_VOLUME_KEY, <span class="errorspan">new Float(value));</span>
+<span class="lineno"> 104</span>                 break;
+<span class="lineno"> 105</span>             case UI:
 </pre>
-<span class="location"><a href="../../src/main/java/com/sidereal/lumm/architecture/core/Audio.java">../../src/main/java/com/sidereal/lumm/architecture/core/Audio.java</a>:107</span>: <span class="message">Use <code>Float.valueOf(value)</code> instead</span><br /><pre class="errorlines">
-<span class="lineno"> 104</span>                 Lumm.data.audioSettings.put(ENVIRONMENT_VOLUME_KEY, new Float(value));
-<span class="lineno"> 105</span>                 break;
-<span class="lineno"> 106</span>             case UI:
-<span class="lineno"> 107</span>                 Lumm.data.audioSettings.put(UI_VOLUME_KEY, <span class="errorspan">new Float(value));</span>
-<span class="lineno"> 108</span>                 break;
-<span class="lineno"> 109</span>         }
+<span class="location"><a href="../../src/main/java/dk/sidereal/lumm/architecture/core/Audio.java">../../src/main/java/dk/sidereal/lumm/architecture/core/Audio.java</a>:106</span>: <span class="message">Use <code>Float.valueOf(value)</code> instead</span><br /><pre class="errorlines">
+<span class="lineno"> 103</span>                 Lumm.data.audioSettings.put(ENVIRONMENT_VOLUME_KEY, new Float(value));
+<span class="lineno"> 104</span>                 break;
+<span class="lineno"> 105</span>             case UI:
+<span class="lineno"> 106</span>                 Lumm.data.audioSettings.put(UI_VOLUME_KEY, <span class="errorspan">new Float(value));</span>
+<span class="lineno"> 107</span>                 break;
+<span class="lineno"> 108</span>         }
 </pre>
-<span class="location"><a href="../../src/main/java/com/sidereal/lumm/architecture/core/Audio.java">../../src/main/java/com/sidereal/lumm/architecture/core/Audio.java</a>:122</span>: <span class="message">Use <code>Float.valueOf(value)</code> instead</span><br /><pre class="errorlines">
-<span class="lineno"> 119</span>                             + customAudioChannel + "\"",
-<span class="lineno"> 120</span>                     null);
-<span class="lineno"> 121</span>         }
-<span class="lineno"> 122</span>         Lumm.data.audioSettings.put(customAudioChannel, <span class="errorspan">new Float(value));</span>
-<span class="lineno"> 123</span>         Lumm.data.save(AppData.AUDIO_SETTINGS_PATH, Lumm.data.audioSettings, true, true);
-<span class="lineno"> 124</span> 
+<span class="location"><a href="../../src/main/java/dk/sidereal/lumm/architecture/core/Audio.java">../../src/main/java/dk/sidereal/lumm/architecture/core/Audio.java</a>:121</span>: <span class="message">Use <code>Float.valueOf(value)</code> instead</span><br /><pre class="errorlines">
+<span class="lineno"> 118</span>                             + customAudioChannel + "\"",
+<span class="lineno"> 119</span>                     null);
+<span class="lineno"> 120</span>         }
+<span class="lineno"> 121</span>         Lumm.data.audioSettings.put(customAudioChannel, <span class="errorspan">new Float(value));</span>
+<span class="lineno"> 122</span>         Lumm.data.save(AppData.AUDIO_SETTINGS_PATH, Lumm.data.audioSettings, true, true);
+<span class="lineno"> 123</span> 
 </pre>
-<span class="location"><a href="../../src/main/java/com/sidereal/lumm/architecture/core/Audio.java">../../src/main/java/com/sidereal/lumm/architecture/core/Audio.java</a>:156</span>: <span class="message">Use <code>Float.valueOf(1)</code> instead</span><br /><pre class="errorlines">
-<span class="lineno"> 153</span> 
-<span class="lineno"> 154</span>     public float getVolume(String customAudioChannel) {
-<span class="lineno"> 155</span>         if (!Lumm.data.audioSettings.containsKey(customAudioChannel))
-<span class="lineno"> 156</span>             Lumm.data.audioSettings.put(customAudioChannel, <span class="errorspan">new Float(1));</span>
-<span class="lineno"> 157</span> 
-<span class="lineno"> 158</span>         return ((Float) (Lumm.data.audioSettings.get(customAudioChannel)));
+<span class="location"><a href="../../src/main/java/dk/sidereal/lumm/architecture/core/Audio.java">../../src/main/java/dk/sidereal/lumm/architecture/core/Audio.java</a>:155</span>: <span class="message">Use <code>Float.valueOf(1)</code> instead</span><br /><pre class="errorlines">
+<span class="lineno"> 152</span> 
+<span class="lineno"> 153</span>     public float getVolume(String customAudioChannel) {
+<span class="lineno"> 154</span>         if (!Lumm.data.audioSettings.containsKey(customAudioChannel))
+<span class="lineno"> 155</span>             Lumm.data.audioSettings.put(customAudioChannel, <span class="errorspan">new Float(1));</span>
+<span class="lineno"> 156</span> 
+<span class="lineno"> 157</span>         return ((Float) (Lumm.data.audioSettings.get(customAudioChannel)));
 </pre>
 </div>
 </div>

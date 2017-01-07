@@ -9,11 +9,11 @@
         priority="4"
         summary="Should use `valueOf` instead of `new`"
         explanation="You should not call the constructor for wrapper classes directly, such as`new Integer(42)`. Instead, call the `valueOf` factory method, such as `Integer.valueOf(42)`. This will typically use less memory because common integers such as 0 and 1 will share a single instance."
-        errorLine1="            loadOnStartup.put(GRAPHICS_SETTINGS_PATH, new Boolean(true));"
+        errorLine1="            loadOnStartup.put(GRAPHICS_SETTINGS_PATH, new Boolean(true));"
         errorLine2="                                                      ~~~~~~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="/Users/CBLE/Documents/android/projects/LummCore/lumm/core/src/main/java/com/sidereal/lumm/architecture/core/AppData.java"
+            file="G:\WORKSPACE\sidereal\core\lumm\core\src\main\java\dk\sidereal\lumm\architecture\core\AppData.java"
             line="290"
             column="55"/>
     </issue>
@@ -26,11 +26,11 @@
         priority="4"
         summary="Should use `valueOf` instead of `new`"
         explanation="You should not call the constructor for wrapper classes directly, such as`new Integer(42)`. Instead, call the `valueOf` factory method, such as `Integer.valueOf(42)`. This will typically use less memory because common integers such as 0 and 1 will share a single instance."
-        errorLine1="            loadOnStartup.put(AUDIO_SETTINGS_PATH, new Boolean(true));"
+        errorLine1="            loadOnStartup.put(AUDIO_SETTINGS_PATH, new Boolean(true));"
         errorLine2="                                                   ~~~~~~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="/Users/CBLE/Documents/android/projects/LummCore/lumm/core/src/main/java/com/sidereal/lumm/architecture/core/AppData.java"
+            file="G:\WORKSPACE\sidereal\core\lumm\core\src\main\java\dk\sidereal\lumm\architecture\core\AppData.java"
             line="291"
             column="52"/>
     </issue>
@@ -43,11 +43,11 @@
         priority="4"
         summary="Should use `valueOf` instead of `new`"
         explanation="You should not call the constructor for wrapper classes directly, such as`new Integer(42)`. Instead, call the `valueOf` factory method, such as `Integer.valueOf(42)`. This will typically use less memory because common integers such as 0 and 1 will share a single instance."
-        errorLine1="            graphicSettings.put(Settings.PARTICLE_SETTINGS, new Integer(ParticleSettings.MAX));"
+        errorLine1="            graphicSettings.put(Settings.PARTICLE_SETTINGS, new Integer(ParticleSettings.MAX));"
         errorLine2="                                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="/Users/CBLE/Documents/android/projects/LummCore/lumm/core/src/main/java/com/sidereal/lumm/architecture/core/AppData.java"
+            file="G:\WORKSPACE\sidereal\core\lumm\core\src\main\java\dk\sidereal\lumm\architecture\core\AppData.java"
             line="306"
             column="61"/>
     </issue>
@@ -60,11 +60,11 @@
         priority="4"
         summary="Should use `valueOf` instead of `new`"
         explanation="You should not call the constructor for wrapper classes directly, such as`new Integer(42)`. Instead, call the `valueOf` factory method, such as `Integer.valueOf(42)`. This will typically use less memory because common integers such as 0 and 1 will share a single instance."
-        errorLine1="            graphicSettings.put(Settings.LINEAR_FILTERING, new Boolean(false));"
+        errorLine1="            graphicSettings.put(Settings.LINEAR_FILTERING, new Boolean(false));"
         errorLine2="                                                           ~~~~~~~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="/Users/CBLE/Documents/android/projects/LummCore/lumm/core/src/main/java/com/sidereal/lumm/architecture/core/AppData.java"
+            file="G:\WORKSPACE\sidereal\core\lumm\core\src\main\java\dk\sidereal\lumm\architecture\core\AppData.java"
             line="307"
             column="60"/>
     </issue>
@@ -77,11 +77,11 @@
         priority="4"
         summary="Should use `valueOf` instead of `new`"
         explanation="You should not call the constructor for wrapper classes directly, such as`new Integer(42)`. Instead, call the `valueOf` factory method, such as `Integer.valueOf(42)`. This will typically use less memory because common integers such as 0 and 1 will share a single instance."
-        errorLine1="            graphicSettings.put(Settings.USE_SHADERS, new Boolean(true));"
+        errorLine1="            graphicSettings.put(Settings.USE_SHADERS, new Boolean(true));"
         errorLine2="                                                      ~~~~~~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="/Users/CBLE/Documents/android/projects/LummCore/lumm/core/src/main/java/com/sidereal/lumm/architecture/core/AppData.java"
+            file="G:\WORKSPACE\sidereal\core\lumm\core\src\main\java\dk\sidereal\lumm\architecture\core\AppData.java"
             line="308"
             column="55"/>
     </issue>
@@ -94,11 +94,11 @@
         priority="4"
         summary="Should use `valueOf` instead of `new`"
         explanation="You should not call the constructor for wrapper classes directly, such as`new Integer(42)`. Instead, call the `valueOf` factory method, such as `Integer.valueOf(42)`. This will typically use less memory because common integers such as 0 and 1 will share a single instance."
-        errorLine1="            graphicSettings.put(Settings.MULTI_THREADED, new Boolean(false));"
+        errorLine1="            graphicSettings.put(Settings.MULTI_THREADED, new Boolean(false));"
         errorLine2="                                                         ~~~~~~~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="/Users/CBLE/Documents/android/projects/LummCore/lumm/core/src/main/java/com/sidereal/lumm/architecture/core/AppData.java"
+            file="G:\WORKSPACE\sidereal\core\lumm\core\src\main\java\dk\sidereal\lumm\architecture\core\AppData.java"
             line="309"
             column="58"/>
     </issue>
@@ -111,11 +111,11 @@
         priority="4"
         summary="Should use `valueOf` instead of `new`"
         explanation="You should not call the constructor for wrapper classes directly, such as`new Integer(42)`. Instead, call the `valueOf` factory method, such as `Integer.valueOf(42)`. This will typically use less memory because common integers such as 0 and 1 will share a single instance."
-        errorLine1="            audioSettings.put(Audio.MASTER_VOLUME_KEY, new Float(1));"
+        errorLine1="            audioSettings.put(Audio.MASTER_VOLUME_KEY, new Float(1));"
         errorLine2="                                                       ~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="/Users/CBLE/Documents/android/projects/LummCore/lumm/core/src/main/java/com/sidereal/lumm/architecture/core/AppData.java"
+            file="G:\WORKSPACE\sidereal\core\lumm\core\src\main\java\dk\sidereal\lumm\architecture\core\AppData.java"
             line="318"
             column="56"/>
     </issue>
@@ -128,11 +128,11 @@
         priority="4"
         summary="Should use `valueOf` instead of `new`"
         explanation="You should not call the constructor for wrapper classes directly, such as`new Integer(42)`. Instead, call the `valueOf` factory method, such as `Integer.valueOf(42)`. This will typically use less memory because common integers such as 0 and 1 will share a single instance."
-        errorLine1="            audioSettings.put(Audio.MUSIC_VOLUME_KEY, new Float(1));"
+        errorLine1="            audioSettings.put(Audio.MUSIC_VOLUME_KEY, new Float(1));"
         errorLine2="                                                      ~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="/Users/CBLE/Documents/android/projects/LummCore/lumm/core/src/main/java/com/sidereal/lumm/architecture/core/AppData.java"
+            file="G:\WORKSPACE\sidereal\core\lumm\core\src\main\java\dk\sidereal\lumm\architecture\core\AppData.java"
             line="319"
             column="55"/>
     </issue>
@@ -145,11 +145,11 @@
         priority="4"
         summary="Should use `valueOf` instead of `new`"
         explanation="You should not call the constructor for wrapper classes directly, such as`new Integer(42)`. Instead, call the `valueOf` factory method, such as `Integer.valueOf(42)`. This will typically use less memory because common integers such as 0 and 1 will share a single instance."
-        errorLine1="            audioSettings.put(Audio.VOICE_VOLUME_KEY, new Float(1));"
+        errorLine1="            audioSettings.put(Audio.VOICE_VOLUME_KEY, new Float(1));"
         errorLine2="                                                      ~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="/Users/CBLE/Documents/android/projects/LummCore/lumm/core/src/main/java/com/sidereal/lumm/architecture/core/AppData.java"
+            file="G:\WORKSPACE\sidereal\core\lumm\core\src\main\java\dk\sidereal\lumm\architecture\core\AppData.java"
             line="320"
             column="55"/>
     </issue>
@@ -162,11 +162,11 @@
         priority="4"
         summary="Should use `valueOf` instead of `new`"
         explanation="You should not call the constructor for wrapper classes directly, such as`new Integer(42)`. Instead, call the `valueOf` factory method, such as `Integer.valueOf(42)`. This will typically use less memory because common integers such as 0 and 1 will share a single instance."
-        errorLine1="            audioSettings.put(Audio.EFFECTS_VOLUME_KEY, new Float(1));"
+        errorLine1="            audioSettings.put(Audio.EFFECTS_VOLUME_KEY, new Float(1));"
         errorLine2="                                                        ~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="/Users/CBLE/Documents/android/projects/LummCore/lumm/core/src/main/java/com/sidereal/lumm/architecture/core/AppData.java"
+            file="G:\WORKSPACE\sidereal\core\lumm\core\src\main\java\dk\sidereal\lumm\architecture\core\AppData.java"
             line="321"
             column="57"/>
     </issue>
@@ -179,11 +179,11 @@
         priority="4"
         summary="Should use `valueOf` instead of `new`"
         explanation="You should not call the constructor for wrapper classes directly, such as`new Integer(42)`. Instead, call the `valueOf` factory method, such as `Integer.valueOf(42)`. This will typically use less memory because common integers such as 0 and 1 will share a single instance."
-        errorLine1="            audioSettings.put(Audio.ENVIRONMENT_VOLUME_KEY, new Float(1));"
+        errorLine1="            audioSettings.put(Audio.ENVIRONMENT_VOLUME_KEY, new Float(1));"
         errorLine2="                                                            ~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="/Users/CBLE/Documents/android/projects/LummCore/lumm/core/src/main/java/com/sidereal/lumm/architecture/core/AppData.java"
+            file="G:\WORKSPACE\sidereal\core\lumm\core\src\main\java\dk\sidereal\lumm\architecture\core\AppData.java"
             line="322"
             column="61"/>
     </issue>
@@ -196,11 +196,11 @@
         priority="4"
         summary="Should use `valueOf` instead of `new`"
         explanation="You should not call the constructor for wrapper classes directly, such as`new Integer(42)`. Instead, call the `valueOf` factory method, such as `Integer.valueOf(42)`. This will typically use less memory because common integers such as 0 and 1 will share a single instance."
-        errorLine1="            audioSettings.put(Audio.UI_VOLUME_KEY, new Float(1));"
+        errorLine1="            audioSettings.put(Audio.UI_VOLUME_KEY, new Float(1));"
         errorLine2="                                                   ~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="/Users/CBLE/Documents/android/projects/LummCore/lumm/core/src/main/java/com/sidereal/lumm/architecture/core/AppData.java"
+            file="G:\WORKSPACE\sidereal\core\lumm\core\src\main\java\dk\sidereal\lumm\architecture\core\AppData.java"
             line="323"
             column="52"/>
     </issue>
@@ -213,11 +213,11 @@
         priority="4"
         summary="Should use `valueOf` instead of `new`"
         explanation="You should not call the constructor for wrapper classes directly, such as`new Integer(42)`. Instead, call the `valueOf` factory method, such as `Integer.valueOf(42)`. This will typically use less memory because common integers such as 0 and 1 will share a single instance."
-        errorLine1="                this.loadOnStartup.put(dataName, new Boolean(loadOnStartup));"
+        errorLine1="                this.loadOnStartup.put(dataName, new Boolean(loadOnStartup));"
         errorLine2="                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="/Users/CBLE/Documents/android/projects/LummCore/lumm/core/src/main/java/com/sidereal/lumm/architecture/core/AppData.java"
+            file="G:\WORKSPACE\sidereal\core\lumm\core\src\main\java\dk\sidereal\lumm\architecture\core\AppData.java"
             line="443"
             column="50"/>
     </issue>
@@ -230,12 +230,12 @@
         priority="4"
         summary="Should use `valueOf` instead of `new`"
         explanation="You should not call the constructor for wrapper classes directly, such as`new Integer(42)`. Instead, call the `valueOf` factory method, such as `Integer.valueOf(42)`. This will typically use less memory because common integers such as 0 and 1 will share a single instance."
-        errorLine1="                Lumm.data.audioSettings.put(MASTER_VOLUME_KEY, new Float(value));"
+        errorLine1="                Lumm.data.audioSettings.put(MASTER_VOLUME_KEY, new Float(value));"
         errorLine2="                                                               ~~~~~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="/Users/CBLE/Documents/android/projects/LummCore/lumm/core/src/main/java/com/sidereal/lumm/architecture/core/Audio.java"
-            line="92"
+            file="G:\WORKSPACE\sidereal\core\lumm\core\src\main\java\dk\sidereal\lumm\architecture\core\Audio.java"
+            line="91"
             column="64"/>
     </issue>
 
@@ -247,12 +247,12 @@
         priority="4"
         summary="Should use `valueOf` instead of `new`"
         explanation="You should not call the constructor for wrapper classes directly, such as`new Integer(42)`. Instead, call the `valueOf` factory method, such as `Integer.valueOf(42)`. This will typically use less memory because common integers such as 0 and 1 will share a single instance."
-        errorLine1="                Lumm.data.audioSettings.put(MUSIC_VOLUME_KEY, new Float(value));"
+        errorLine1="                Lumm.data.audioSettings.put(MUSIC_VOLUME_KEY, new Float(value));"
         errorLine2="                                                              ~~~~~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="/Users/CBLE/Documents/android/projects/LummCore/lumm/core/src/main/java/com/sidereal/lumm/architecture/core/Audio.java"
-            line="95"
+            file="G:\WORKSPACE\sidereal\core\lumm\core\src\main\java\dk\sidereal\lumm\architecture\core\Audio.java"
+            line="94"
             column="63"/>
     </issue>
 
@@ -264,12 +264,12 @@
         priority="4"
         summary="Should use `valueOf` instead of `new`"
         explanation="You should not call the constructor for wrapper classes directly, such as`new Integer(42)`. Instead, call the `valueOf` factory method, such as `Integer.valueOf(42)`. This will typically use less memory because common integers such as 0 and 1 will share a single instance."
-        errorLine1="                Lumm.data.audioSettings.put(VOICE_VOLUME_KEY, new Float(value));"
+        errorLine1="                Lumm.data.audioSettings.put(VOICE_VOLUME_KEY, new Float(value));"
         errorLine2="                                                              ~~~~~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="/Users/CBLE/Documents/android/projects/LummCore/lumm/core/src/main/java/com/sidereal/lumm/architecture/core/Audio.java"
-            line="98"
+            file="G:\WORKSPACE\sidereal\core\lumm\core\src\main\java\dk\sidereal\lumm\architecture\core\Audio.java"
+            line="97"
             column="63"/>
     </issue>
 
@@ -281,12 +281,12 @@
         priority="4"
         summary="Should use `valueOf` instead of `new`"
         explanation="You should not call the constructor for wrapper classes directly, such as`new Integer(42)`. Instead, call the `valueOf` factory method, such as `Integer.valueOf(42)`. This will typically use less memory because common integers such as 0 and 1 will share a single instance."
-        errorLine1="                Lumm.data.audioSettings.put(EFFECTS_VOLUME_KEY, new Float(value));"
+        errorLine1="                Lumm.data.audioSettings.put(EFFECTS_VOLUME_KEY, new Float(value));"
         errorLine2="                                                                ~~~~~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="/Users/CBLE/Documents/android/projects/LummCore/lumm/core/src/main/java/com/sidereal/lumm/architecture/core/Audio.java"
-            line="101"
+            file="G:\WORKSPACE\sidereal\core\lumm\core\src\main\java\dk\sidereal\lumm\architecture\core\Audio.java"
+            line="100"
             column="65"/>
     </issue>
 
@@ -298,12 +298,12 @@
         priority="4"
         summary="Should use `valueOf` instead of `new`"
         explanation="You should not call the constructor for wrapper classes directly, such as`new Integer(42)`. Instead, call the `valueOf` factory method, such as `Integer.valueOf(42)`. This will typically use less memory because common integers such as 0 and 1 will share a single instance."
-        errorLine1="                Lumm.data.audioSettings.put(ENVIRONMENT_VOLUME_KEY, new Float(value));"
+        errorLine1="                Lumm.data.audioSettings.put(ENVIRONMENT_VOLUME_KEY, new Float(value));"
         errorLine2="                                                                    ~~~~~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="/Users/CBLE/Documents/android/projects/LummCore/lumm/core/src/main/java/com/sidereal/lumm/architecture/core/Audio.java"
-            line="104"
+            file="G:\WORKSPACE\sidereal\core\lumm\core\src\main\java\dk\sidereal\lumm\architecture\core\Audio.java"
+            line="103"
             column="69"/>
     </issue>
 
@@ -315,12 +315,12 @@
         priority="4"
         summary="Should use `valueOf` instead of `new`"
         explanation="You should not call the constructor for wrapper classes directly, such as`new Integer(42)`. Instead, call the `valueOf` factory method, such as `Integer.valueOf(42)`. This will typically use less memory because common integers such as 0 and 1 will share a single instance."
-        errorLine1="                Lumm.data.audioSettings.put(UI_VOLUME_KEY, new Float(value));"
+        errorLine1="                Lumm.data.audioSettings.put(UI_VOLUME_KEY, new Float(value));"
         errorLine2="                                                           ~~~~~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="/Users/CBLE/Documents/android/projects/LummCore/lumm/core/src/main/java/com/sidereal/lumm/architecture/core/Audio.java"
-            line="107"
+            file="G:\WORKSPACE\sidereal\core\lumm\core\src\main\java\dk\sidereal\lumm\architecture\core\Audio.java"
+            line="106"
             column="60"/>
     </issue>
 
@@ -332,12 +332,12 @@
         priority="4"
         summary="Should use `valueOf` instead of `new`"
         explanation="You should not call the constructor for wrapper classes directly, such as`new Integer(42)`. Instead, call the `valueOf` factory method, such as `Integer.valueOf(42)`. This will typically use less memory because common integers such as 0 and 1 will share a single instance."
-        errorLine1="        Lumm.data.audioSettings.put(customAudioChannel, new Float(value));"
+        errorLine1="        Lumm.data.audioSettings.put(customAudioChannel, new Float(value));"
         errorLine2="                                                        ~~~~~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="/Users/CBLE/Documents/android/projects/LummCore/lumm/core/src/main/java/com/sidereal/lumm/architecture/core/Audio.java"
-            line="122"
+            file="G:\WORKSPACE\sidereal\core\lumm\core\src\main\java\dk\sidereal\lumm\architecture\core\Audio.java"
+            line="121"
             column="57"/>
     </issue>
 
@@ -349,12 +349,12 @@
         priority="4"
         summary="Should use `valueOf` instead of `new`"
         explanation="You should not call the constructor for wrapper classes directly, such as`new Integer(42)`. Instead, call the `valueOf` factory method, such as `Integer.valueOf(42)`. This will typically use less memory because common integers such as 0 and 1 will share a single instance."
-        errorLine1="            Lumm.data.audioSettings.put(customAudioChannel, new Float(1));"
+        errorLine1="            Lumm.data.audioSettings.put(customAudioChannel, new Float(1));"
         errorLine2="                                                            ~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="/Users/CBLE/Documents/android/projects/LummCore/lumm/core/src/main/java/com/sidereal/lumm/architecture/core/Audio.java"
-            line="156"
+            file="G:\WORKSPACE\sidereal\core\lumm\core\src\main\java\dk\sidereal\lumm\architecture\core\Audio.java"
+            line="155"
             column="61"/>
     </issue>
 
