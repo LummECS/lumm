@@ -1,3 +1,4 @@
+build/
 *.iml
 .gradle
 **/local.properties
@@ -6,4 +7,4 @@
 .DS_Store
 /captures
 .externalNativeBuild
-build/
+**/build/
