@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/LummCore.iml" filepath="$PROJECT_DIR$/LummCore.iml" />
-      <module fileurl="file://$PROJECT_DIR$/core.iml" filepath="$PROJECT_DIR$/core.iml" />
       <module fileurl="file://$PROJECT_DIR$/lumm/core/core.iml" filepath="$PROJECT_DIR$/lumm/core/core.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lumm/core/core-core.iml" filepath="$PROJECT_DIR$/lumm/core/core-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lumm.iml" filepath="$PROJECT_DIR$/lumm.iml" />
     </modules>
   </component>
 </project>
