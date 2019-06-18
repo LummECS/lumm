@@ -2,7 +2,7 @@
 
 
 dependencies {
-    compile "com.badlogicgames.gdx:gdx:$gdxVersion"
+    implementation "com.badlogicgames.gdx:gdx:$gdxVersion"
 }
 
 

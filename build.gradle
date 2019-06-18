@@ -2,23 +2,23 @@
 
 buildscript {
     repositories {
+        google()
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.2.3'
-        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7.3'
-        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
+        classpath 'com.android.tools.build:gradle:3.4.1'
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
 }
 plugins {
-    id "com.jfrog.bintray" version "1.7"
+    id "com.jfrog.bintray" version "1.8.4"
 }
 
 allprojects {
-
     repositories {
+        google()
         jcenter()
     }
 
@@ -29,7 +29,8 @@ subprojects {
     apply from:"$rootDir/gradle/bintray.gradle"
 
 
-    task checkPublishingProperties << {
+
+    task checkPublishingProperties {
 
         def checkProperty = { String propertyName, String defaultValue = null ->
 
@@ -69,12 +70,6 @@ subprojects {
 
 }
 
-
-// run gradle wrapper to update gradle wrapper version
-// http://stackoverflow.com/questions/25769536/how-when-to-generate-gradle-wrapper-files
-task wrapper(type: Wrapper) {
-    gradleVersion = '2.10' //version required
-}
 
 // task gradle bintrayUpload
 // https://github.com/bintray/gradle-bintray-plugin#readme
