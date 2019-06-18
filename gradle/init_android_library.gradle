@@ -1,11 +1,3 @@
-ext.getProjectName = {
-    if (project.hasProperty('project__artifact_id')){
-        return project.hasProperty('project')
-    }
-    project.name.substring(project.name.lastIndexOf('/') + 1)
-
-}
-
 apply plugin: 'com.android.library'
 
 android {
@@ -29,23 +21,4 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-}
-
-
-
-ext {
-    project.group = project__group
-    project.version = project__version
-}
-
-ext.getSiteUrl = {
-    return project__url_root + getProjectName()
-}
-
-ext.getGitUrl = {
-    return getSiteUrl() + '.git'
-}
-
-ext.getIssuesUrl = {
-    return getSiteUrl() + '/issues'
 }

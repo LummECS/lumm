@@ -23,35 +23,36 @@ allprojects {
     }
 
 }
+
 subprojects {
-    apply from:"$rootDir/gradle/vars.gradle"
-    apply from:"$rootDir/gradle/init_android_library.gradle"
-    apply from:"$rootDir/gradle/bintray.gradle"
 
-
+    apply from: "$rootDir/gradle/init.gradle"
+    apply from: "$rootDir/gradle/vars.gradle"
+    apply from: "$rootDir/gradle/init_android_library.gradle"
+    apply from: "$rootDir/gradle/bintray.gradle"
 
     task checkPublishingProperties {
 
         def checkProperty = { String propertyName, String defaultValue = null ->
 
-            if(project.hasProperty(propertyName)){
-                println 'Property "'+propertyName+'" found, value is "'+project.getProperties().get(propertyName)+'"'
-            }else {
-                if(defaultValue != null){
-                    println 'Property "'+propertyName+'" found, default value is "'+defaultValue+'"'
-                }else{
-                    println 'Property "'+propertyName+'" found'
+            if (project.hasProperty(propertyName)) {
+                println 'Property "' + propertyName + '" found, value is "' + project.getProperties().get(propertyName) + '"'
+            } else {
+                if (defaultValue != null) {
+                    println 'Property "' + propertyName + '" found, default value is "' + defaultValue + '"'
+                } else {
+                    println 'Property "' + propertyName + '" found'
                 }
             }
         }
 
         println '\nChecking project-related properties'
         println 'Project artifactId is \'$project.name\''
-        checkProperty('project__group','dk.sidereal.lumm')
-        checkProperty('project__repo','lumm')
-        checkProperty('project__org','sidereal')
+        checkProperty('project__group', 'dk.sidereal.lumm')
+        checkProperty('project__repo', 'lumm')
+        checkProperty('project__org', 'sidereal')
         checkProperty('project__description')
-        checkProperty('project__url_root','sidereal')
+        checkProperty('project__url_root', 'sidereal')
 
 
         println '\nChecking version-related properties'
@@ -63,9 +64,9 @@ subprojects {
         checkProperty('lumm__bintray_api_key')
 
         println '\nChecking user-related properties'
-        checkProperty('user__id','sreal')
-        checkProperty('user__name','sidereal')
-        checkProperty('user__email','contact@sidereal.dk')
+        checkProperty('user__id', 'sreal')
+        checkProperty('user__name', 'sidereal')
+        checkProperty('user__email', 'contact@sidereal.dk')
     }
 
 }

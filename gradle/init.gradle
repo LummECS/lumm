@@ -1,0 +1,23 @@
+ext {
+    project.group = project__group
+    project.version = project__version
+}
+
+ext.getSiteUrl = {
+    return project__url_root + getProjectName()
+}
+
+ext.getGitUrl = {
+    return getSiteUrl() + '.git'
+}
+
+ext.getIssuesUrl = {
+    return getSiteUrl() + '/issues'
+}
+
+ext.getProjectName = {
+    if (project.hasProperty('project__artifact_id')) {
+        return project.getProperties().get('project')
+    }
+    return project.name.substring(project.name.lastIndexOf('/') + 1)
+}

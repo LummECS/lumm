@@ -16,42 +16,44 @@ ext.setUpBintrayConnection = {
         println(warningNoCredentials)
     }
 
-    project.install {
-        repositories.mavenInstaller {
-            pom {
-                project {
-                    packaging 'aar'
 
-                    groupId project__group
-                    artifactId project.getProjectName()
-
-                    name project.getProjectName()
-                    description project__description
-
-                    url project.getSiteUrl()
-                    licenses {
-                        license {
-                            name 'The Apache Software License, Version 2.0'
-                            url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
-                        }
-                    }
-                    developers {
-                        developer {
-                            id project.getProperties().getOrDefault('user__id', 'sreal')
-                            name project.getProperties().getOrDefault('user__name', 'sidereal')
-                            email project.getProperties().getOrDefault('user__email', 'contact@sidereal.dk')
-                        }
-                    }
-                    scm {
-                        connection project.getGitUrl()
-                        developerConnection project.getGitUrl()
-                        url project.getSiteUrl()
-
-                    }
-                }
-            }
-        }
-    }
+//    project.install {
+//        repositories.mavenInstaller {
+//            pom {
+//
+//                project {
+//                    packaging 'aar'
+//
+//                    groupId project__group
+//                    artifactId project.getProjectName()
+//
+//                    name project.getProjectName()
+//                    description project__description
+//
+//                    url project.getSiteUrl()
+//                    licenses {
+//                        license {
+//                            name 'The Apache Software License, Version 2.0'
+//                            url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+//                        }
+//                    }
+//                    developers {
+//                        developer {
+//                            id project.getProperties().getOrDefault('user__id', 'sreal')
+//                            name project.getProperties().getOrDefault('user__name', 'sidereal')
+//                            email project.getProperties().getOrDefault('user__email', 'contact@sidereal.dk')
+//                        }
+//                    }
+//                    scm {
+//                        connection project.getGitUrl()
+//                        developerConnection project.getGitUrl()
+//                        url project.getSiteUrl()
+//
+//                    }
+//                }
+//            }
+//        }
+//    }
 
 
     project.bintray {
