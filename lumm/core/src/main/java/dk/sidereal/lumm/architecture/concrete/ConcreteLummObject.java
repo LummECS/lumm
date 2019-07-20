@@ -48,7 +48,7 @@ public class ConcreteLummObject extends LummObject {
     }
 
     @Override
-    protected void onPause(Boolean running) {
+    protected void onPause(boolean running) {
 
     }
 

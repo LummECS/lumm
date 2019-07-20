@@ -67,7 +67,7 @@ public class Hoverable extends ConcreteLummComponent {
         if (!Lumm.debug.isEnabled())
             return;
 
-        debugSpriteSource = new Sprite(Lumm.assets.get(Lumm.assets.frameworkAssetsFolder + "White.png", Texture.class));
+        debugSpriteSource = new Sprite();
         debugSpriteSource.setColor(new Color(0.7f, 0, 1, 0.5f));
     }
 

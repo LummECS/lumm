@@ -82,15 +82,14 @@ public class PathfindingHandler extends ConcreteLummComponent {
         if (glyphLayout == null) {
             glyphLayout = new GlyphLayout();
         }
-        Lumm.assets.load(Lumm.assets.frameworkAssetsFolder + "White.png", Texture.class);
 
         if (debugOpen == null) {
-            debugOpen = new Sprite(Lumm.assets.get(Lumm.assets.frameworkAssetsFolder + "White.png", Texture.class));
+            debugOpen = new Sprite();
             debugOpen.setColor(new Color(0, 1, 0, 0.5f));
         }
 
         if (debugClosed == null) {
-            debugClosed = new Sprite(Lumm.assets.get(Lumm.assets.frameworkAssetsFolder + "White.png", Texture.class));
+            debugClosed = new Sprite();
             debugClosed.setColor(new Color(1, 0, 0, 0.5f));
         }
     }

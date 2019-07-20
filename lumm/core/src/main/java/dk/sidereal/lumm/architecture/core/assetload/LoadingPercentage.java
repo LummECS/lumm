@@ -54,9 +54,6 @@ public class LoadingPercentage extends AssetLoadHandler {
 
         if (text != null)
             return;
-        if (!Lumm.assets.contains(Lumm.assets.frameworkAssetsFolder + "Blocks4.fnt")
-                || !Lumm.assets.contains(Lumm.assets.frameworkAssetsFolder + "Blocks4_0.png"))
-            return;
 
         text = new TextBuilder(getScene(), true);
         text.setScale(Gdx.graphics.getWidth() / 600f);

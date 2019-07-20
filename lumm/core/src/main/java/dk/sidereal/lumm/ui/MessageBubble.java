@@ -32,6 +32,7 @@ import dk.sidereal.lumm.architecture.core.input.OnClickListener;
 import dk.sidereal.lumm.architecture.listeners.OnResizeListener;
 import dk.sidereal.lumm.components.input.Clickable;
 import dk.sidereal.lumm.components.renderer.Renderer;
+import dk.sidereal.lumm.components.renderer.color.ColorDrawerBuilder;
 import dk.sidereal.lumm.components.renderer.sprite.SpriteBuilder;
 import dk.sidereal.lumm.components.renderer.sprite.SpriteDrawer;
 import dk.sidereal.lumm.architecture.core.Input;
@@ -277,9 +278,8 @@ public class MessageBubble extends ConcreteLummObject {
 
         setSceneLayer("UI");
 
-        Lumm.assets.load(Lumm.assets.frameworkAssetsFolder + "White.png", Texture.class);
 
-        renderer.addDrawer("BG", new SpriteBuilder(Lumm.assets.frameworkAssetsFolder + "White.png")
+        renderer.addDrawer("BG", new ColorDrawerBuilder().setColor(Color.WHITE)
                 .setSizeAndCenter(size.x, size.y).setTransparency(0).setColor(bgColor));
 
         text = new TextBuilder(getScene(), true);

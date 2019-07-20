@@ -439,7 +439,7 @@ public abstract class LummObject implements IEnableable {
      *
      * @param running
      */
-    protected abstract void onPause(Boolean running);
+    protected abstract void onPause(boolean running);
 
     /**
      * Called in {@link Lumm#handleSceneTransition()}, on the objects that were

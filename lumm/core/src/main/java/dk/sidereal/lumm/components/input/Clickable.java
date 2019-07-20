@@ -157,8 +157,7 @@ public class Clickable extends ConcreteLummComponent {
         if (!Lumm.debug.isEnabled())
             return;
         if (debugSpriteSource == null) {
-            debugSpriteSource = new Sprite(
-                    Lumm.assets.get(Lumm.assets.frameworkAssetsFolder + "White.png", Texture.class));
+            debugSpriteSource = new Sprite();
             debugSpriteSource.setColor(new Color(218 / 255f, 165 / 255f, 32 / 255f, 0.5f));
         }
     }

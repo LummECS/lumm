@@ -159,11 +159,10 @@ public class Assets extends LummModule {
          * Gdx.files.classPath can't be used, so the FileHandleResolver has to
          * be set to the internal one.
          */
-        load(frameworkAssetsFolder + "noClip.png", Texture.class, frameworkAssetsResolver);
-        load(frameworkAssetsFolder + "White.png", Texture.class, frameworkAssetsResolver);
-        load(frameworkAssetsFolder + "Blocks4.fnt", BitmapFont.class, frameworkAssetsResolver);
-        load(frameworkAssetsFolder + "Blocks.fnt", BitmapFont.class, frameworkAssetsResolver);
-        load(frameworkAssetsFolder + "AudioListener.png", Texture.class, frameworkAssetsResolver);
+//        load(frameworkAssetsFolder + "noClip.png", Texture.class, frameworkAssetsResolver);
+//        load(frameworkAssetsFolder + "Blocks4.fnt", BitmapFont.class, frameworkAssetsResolver);
+//        load(frameworkAssetsFolder + "Blocks.fnt", BitmapFont.class, frameworkAssetsResolver);
+//        load(frameworkAssetsFolder + "AudioListener.png", Texture.class, frameworkAssetsResolver);
 
         onDisposeListener = new OnDisposeListener<LummModule>() {
 
