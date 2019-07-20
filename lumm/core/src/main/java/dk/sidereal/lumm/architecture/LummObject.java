@@ -404,6 +404,7 @@ public abstract class LummObject implements IEnableable {
      * this object
      */
     final void onPauseInternal(boolean value) {
+        onPause(value);
         if (onPauseListener != null)
             onPauseListener.onPause(this, value);
 
@@ -433,6 +434,12 @@ public abstract class LummObject implements IEnableable {
 
     /** Method to run in the rendering loop that can be customised */
     protected abstract void onRender();
+
+    /** Callback from{@link LummObject#onPauseInternal(boolean)}
+     *
+     * @param running
+     */
+    protected abstract void onPause(Boolean running);
 
     /**
      * Called in {@link Lumm#handleSceneTransition()}, on the objects that were

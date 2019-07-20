@@ -48,6 +48,11 @@ public class ConcreteLummObject extends LummObject {
     }
 
     @Override
+    protected void onPause(Boolean running) {
+
+    }
+
+    @Override
     protected void onSceneChange() {
 
     }

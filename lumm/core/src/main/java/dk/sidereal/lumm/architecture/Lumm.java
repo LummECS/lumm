@@ -461,7 +461,7 @@ public class Lumm extends Game {
      * Adds a module to run throughout the entire application. This method is to
      * be used at runtime, as for initialisation, you can add {@link LummModule}
      * to {@link LummConfiguration} using
-     * {@link LummConfiguration#addModule(LummModule)},
+     * {@link LummConfiguration#addModule(Class)},
      *
      * <p>
      * The module will be accessible from game scenes, batches, objects and

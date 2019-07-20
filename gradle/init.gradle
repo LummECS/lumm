@@ -1,3 +1,4 @@
+
 ext {
     project.group = project__group
     project.version = project__version
